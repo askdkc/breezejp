@@ -1,6 +1,6 @@
 <?php
 
-it('runs setup command without error', function () {
+it('runs setup command without error', closure: function () {
 
     $this->artisan('breezejp')
         ->expectsOutput('Laravel Breeze用に日本語翻訳ファイルを準備します')
