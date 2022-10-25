@@ -2,6 +2,15 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.0.2 - 2022-10-25
+
+### What's Changed
+
+- Add php 8.2 for test (php8.2のテストに対応) by @askdkc in https://github.com/askdkc/breezejp/pull/2
+- Add Email JP Translation (メール通知の日本語化に対応) by @askdkc in https://github.com/askdkc/breezejp/pull/3
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.0.1...v1.0.2
+
 ## v1.0.1 - 2022-10-25
 
 ### What's Changed
