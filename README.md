@@ -26,7 +26,11 @@ php artisan breezejp
 Laravel Breeze用に日本語翻訳ファイルを準備します
 
  GitHubリポジトリにスターの御協力をお願いします🙏 (yes/no) [yes]: 
- (良かったらこちらのGitHubリポにスター頂けると励みになります)
+ 
+ (ブラウザが開いてこのGitHubリポが開きます。スター頂けると励みになります)
+ 
+ Thank you! / ありがとう💓
+日本語ファイルのインストールが完了しました!
 ```
 
 ## 使い方
@@ -58,6 +62,26 @@ LaravelにアクセスするとBreezeの各メニューやバリデーション�
 php artsan serve
 
 http://localhost:8000/ にアクセス
+```
+
+- ユーザ登録画面
+<img width="1062" alt="image" src="https://user-images.githubusercontent.com/7894265/197683533-194da23f-01e1-4f76-a2ec-3ee6412e3c93.png">
+
+- ログイン画面
+<img width="1062" alt="image" src="https://user-images.githubusercontent.com/7894265/197683653-e58c4f46-ad2a-458b-86a9-96b428f0c711.png">
+
+- 各種警告メッセージも日本語化されてます
+<img width="1062" alt="image" src="https://user-images.githubusercontent.com/7894265/197683736-701ed978-9cf3-43e1-9f27-0961e760489e.png">
+
+
+## 日本語のカスタマイズ
+言語ファイルは下記ディレクトリに出力されていますので、こちらのファイルの中身を修正することで自由にカスタマイズ可能です
+```
+/lang/ja.json ← Breezeの各画面の日本語ファイル
+/lang/ja/auth.php ← 認証画面の警告メッセージの日本語ファイル
+/lang/ja/pagination.php ← ページ送りの日本語ファイル
+/lang/ja/auth.php ← 認証画面のパスワード関係の日本語ファイル
+/lang/ja/validation.php ← 各種バリデーションの日本語ファイル
 ```
 
 ## テスト方法
