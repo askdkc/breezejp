@@ -1,0 +1,21 @@
+{
+    "Name": "名前",
+    "Email": "メールアドレス",
+    "Password": "パスワード",
+    "Confirm Password": "パスワードを再入力",
+    "Already registered?": "既に登録済みの方",
+    "Register": "登録",
+    "Remember me": "このブラウザに認証情報を記憶",
+    "Forgot your password?": "パスワードを忘れた？",
+    "Log in": "ログイン",
+    "Log Out": "ログアウト",
+    "Reset Password": "パスワードのリセット",
+    "Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn't receive the email, we will gladly send you another.": "ご登録頂きありがとうございます。メールアドレス確認のリンクを送付しましたので、メールに記載のリンクをクリックしてください。メールが届いていない場合には、再送も可能です",
+    "A new verification link has been sent to the email address you provided during registration.": "ユーザ登録時に入力頂いたメールアドレス宛にメールアドレス確認リンクを再送しました",
+    "Resend Verification Email": "メールアドレス確認リンクの再送",
+    "Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.": "パスワードをお忘れですか？ご登録時のメールアドレスを入力頂ければ、パスワードリセットのためのリンクをメールで送信いたします",
+    "Email Password Reset Link": "パスワードリセットメールを送信",
+    "This is a secure area of the application. Please confirm your password before continuing.": "認証が必要なページです。パスワードを入力して確認ボタンをクリックしてください",
+    "Confirm": "確認",
+    "Dashboard": "管理画面"
+}
