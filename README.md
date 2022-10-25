@@ -21,6 +21,12 @@ composer require askdkc/breezejp --dev
 
 ```bash
 php artisan breezejp
+
+出力内容：
+Laravel Breeze用に日本語翻訳ファイルを準備します
+
+ GitHubリポジトリにスターの御協力をお願いします🙏 (yes/no) [yes]: 
+ (良かったらこちらのGitHubリポにスター頂けると励みになります)
 ```
 
 ## 使い方
