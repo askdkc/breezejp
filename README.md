@@ -73,11 +73,17 @@ http://localhost:8000/ にアクセス
 - 各種警告メッセージも日本語化されてます
 <img width="1062" alt="image" src="https://user-images.githubusercontent.com/7894265/197683736-701ed978-9cf3-43e1-9f27-0961e760489e.png">
 
+- Breezeから送信されるメールアドレス確認通知メールの日本語化や
+<img width="808" alt="image" src="https://user-images.githubusercontent.com/7894265/197893902-40d723bf-c9a4-4886-82a7-93beb7fcf13d.png">
+
+- パスワードリセット通知のメールの日本語化も対応
+<img width="808" alt="image" src="https://user-images.githubusercontent.com/7894265/197893683-b83215b3-6e0f-4e5d-816e-b13093ea8b32.png">
+
 
 ## 日本語のカスタマイズ
 言語ファイルは下記ディレクトリに出力されていますので、こちらのファイルの中身を修正することで自由にカスタマイズ可能です
 ```
-/lang/ja.json ← Breezeの各画面の日本語ファイル
+/lang/ja.json ← Breezeの各画面の日本語ファイル / メール通知の翻訳もこちら
 /lang/ja/auth.php ← 認証画面の警告メッセージの日本語ファイル
 /lang/ja/pagination.php ← ページ送りの日本語ファイル
 /lang/ja/auth.php ← 認証画面のパスワード関係の日本語ファイル
