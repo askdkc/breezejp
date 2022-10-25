@@ -18,8 +18,8 @@ class BreezejpCommand extends Command
         (new Filesystem)->ensureDirectoryExists(lang_path());
         (new Filesystem)->copyDirectory(__DIR__.'/../../stubs/', lang_path());
 
-        if ($this->confirm("GitHubリポジトリにスターの御協力をお願いします🙏", true)) {
-            $repoUrl = "https://github.com/askdkc/breezejp";
+        if ($this->confirm('GitHubリポジトリにスターの御協力をお願いします🙏', true)) {
+            $repoUrl = 'https://github.com/askdkc/breezejp';
 
             if (PHP_OS_FAMILY == 'Darwin') {
                 exec("open {$repoUrl}");
@@ -34,9 +34,8 @@ class BreezejpCommand extends Command
             $this->line('Thank you! / ありがとう💓');
         }
 
-        $this->info("日本語ファイルのインストールが完了しました!");
+        $this->info('日本語ファイルのインストールが完了しました!');
 
         return self::SUCCESS;
     }
-
 }

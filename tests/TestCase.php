@@ -2,9 +2,9 @@
 
 namespace Askdkc\Breezejp\Tests;
 
+use Askdkc\Breezejp\BreezejpServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Askdkc\Breezejp\BreezejpServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -23,5 +23,4 @@ class TestCase extends Orchestra
             BreezejpServiceProvider::class,
         ];
     }
-
 }

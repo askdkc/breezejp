@@ -2,9 +2,9 @@
 
 namespace Askdkc\Breezejp;
 
+use Askdkc\Breezejp\Commands\BreezejpCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Askdkc\Breezejp\Commands\BreezejpCommand;
 
 class BreezejpServiceProvider extends PackageServiceProvider
 {
