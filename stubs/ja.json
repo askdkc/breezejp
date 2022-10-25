@@ -17,5 +17,16 @@
     "Email Password Reset Link": "パスワードリセットメールを送信",
     "This is a secure area of the application. Please confirm your password before continuing.": "認証が必要なページです。パスワードを入力して確認ボタンをクリックしてください",
     "Confirm": "確認",
-    "Dashboard": "管理画面"
+    "Dashboard": "管理画面",
+    "Verify Email Address": "メールアドレスの確認",
+    "Please click the button below to verify your email address.": "メールアドレスを確認するため、下記のボタンをクリックしてください",
+    "If you did not create an account, no further action is required.": "このサービスへのアカウントを登録していない場合には、本メールへの対応は不要です",
+    "Hello!": "こんにちは",
+    "If you're having trouble clicking the \":actionText\" button, copy and paste the URL below\ninto your web browser:": "もし\":actionText\"がクリックできない場合には下記URLをコピー＆ペースしてアクセスしてください",
+    "into your web browser:" : "",
+    "Reset Password Notification": "パスワードのリセット方法について",
+    "You are receiving this email because we received a password reset request for your account.": "このメールはパスワードのリセットリクエストにより送信されています",
+    "This password reset link will expire in :count minutes.": "このパスワードリセット用リンクは :count分で有効期限が切れます",
+    "If you did not request a password reset, no further action is required.": "パスワードのリセットリクエストをしていない場合には、本メールへの対応は不要です",
+    "Regards": "以上、よろしくお願い申し上げます"
 }
