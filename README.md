@@ -9,6 +9,9 @@
 Laravel Breezeをインストールした後に最初にインストールしてください。
 後からインストールすると既存の言語ファイルを上書きするため、ご自身の修正が消えてしまう場合があります。
 
+<img src="https://user-images.githubusercontent.com/7894265/198011737-c40cedc8-9f5d-4517-8407-93b2844bbeb2.gif" width="600">
+
+
 ## インストール
 
 composerを使ってインストールしてください:
