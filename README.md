@@ -100,6 +100,7 @@ http://localhost:8000/ にアクセス
 
 ```bash
 composer test
+composer analyse
 ```
 
 ## 変更履歴
