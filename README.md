@@ -5,9 +5,9 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/askdkc/breezejp/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/askdkc/breezejp/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/askdkc/breezejp.svg?style=flat-square)](https://packagist.org/packages/askdkc/breezejp)
 
-このパッケージはLaravel Breezeを日本語化するパッケージです。
-Laravel Breezeをインストールした後に最初にインストールしてください。
-後からインストールすると既存の言語ファイルを上書きするため、ご自身の修正が消えてしまう場合があります。
+このパッケージはLaravel Breezeを日本語化するパッケージです。<br>
+Laravel Breezeをインストールした後にインストールしてください。<br>
+翻訳ファイルをLaravelの`lang`ディレクトリ配下に出力して日本語化していますので、詳しくはこのREADMEの[日本語のカスタマイズ](#日本語のカスタマイズ)をご確認願います。
 
 <img src="https://user-images.githubusercontent.com/7894265/198011737-c40cedc8-9f5d-4517-8407-93b2844bbeb2.gif" width="600">
 
@@ -86,11 +86,14 @@ http://localhost:8000/ にアクセス
 ## 日本語のカスタマイズ
 言語ファイルは下記ディレクトリに出力されていますので、こちらのファイルの中身を修正することで自由にカスタマイズ可能です
 ```
-/lang/ja.json ← Breezeの各画面の日本語ファイル / メール通知の翻訳もこちら
-/lang/ja/auth.php ← 認証画面の警告メッセージの日本語ファイル
-/lang/ja/pagination.php ← ページ送りの日本語ファイル
-/lang/ja/auth.php ← 認証画面のパスワード関係の日本語ファイル
-/lang/ja/validation.php ← 各種バリデーションの日本語ファイル
+.
+└─ lang
+   ├── ja.json ← Breezeの各画面の日本語ファイル / メール通知の翻訳もこちら
+   └─ ja
+       ├── auth.php ← 認証画面の警告メッセージの日本語ファイル
+       ├── pagination.php ← ページ送りの日本語ファイル
+       ├── auth.php ← 認証画面のパスワード関係の日本語ファイル
+       └── validation.php ← 各種バリデーションの日本語ファイル
 ```
 
 ## カンマ取りたいっす

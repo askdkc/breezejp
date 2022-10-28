@@ -9,7 +9,7 @@ class BreezejpCommand extends Command
 {
     public $signature = 'breezejp';
 
-    public $description = 'My command';
+    public $description = 'Add Japanese Translation files for Laravel Breeze';
 
     public function handle(): int
     {
