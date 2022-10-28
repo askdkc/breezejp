@@ -96,35 +96,6 @@ http://localhost:8000/ にアクセス
        └── validation.php ← 各種バリデーションの日本語ファイル
 ```
 
-## カンマ取りたいっす
-<img width="599" alt="image" src="https://user-images.githubusercontent.com/7894265/197967699-93aa02be-d34d-4e2c-95be-f9f26939d93a.png">
-
-→ この部分はLaravelのメールテンプレートに直書きされてる部分なので[翻訳ファイル](#日本語のカスタマイズ)の反映が効かないです😢
-
-### 対処法
-以下のコマンドでメール通知のLaravelテンプレートを自分のLaravelアプリ内に出力させます
-```bash
-php artisan vendor:publish --tag=laravel-notifications
-```
-
-出力されたファイル `resources/views/vendor/notifications/email.blade.php` を開きます
-```vim
-42行目
----before---
-@lang('Regards'),<br>
-------------
-↓ 上記の ),<br> についてる不要な , を消します
----after---
-@lang('Regards')<br>
------------
-```
-
-あとは何も考えずにメールを再送してみると
-
-<img width="599" alt="image" src="https://user-images.githubusercontent.com/7894265/197968934-381c17e1-8440-4772-95b6-5425c8d65f9a.png">
-
-消えた〜💓
-
 ## テスト方法
 
 ```bash
