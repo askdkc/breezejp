@@ -23,7 +23,7 @@ class BreezejpServiceProvider extends PackageServiceProvider
             ->hasCommand(BreezejpCommand::class);
     }
 
-    public function boot() : void
+    public function boot(): void
     {
         ResetPassword::toMailUsing(function ($notifiable, $token) {
             return (new MailMessage)
