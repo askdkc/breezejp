@@ -77,10 +77,10 @@ http://localhost:8000/ にアクセス
 <img width="1062" alt="image" src="https://user-images.githubusercontent.com/7894265/197683736-701ed978-9cf3-43e1-9f27-0961e760489e.png">
 
 - Breezeから送信されるメールアドレス確認通知メールの日本語化や
-<img width="808" alt="image" src="https://user-images.githubusercontent.com/7894265/197893902-40d723bf-c9a4-4886-82a7-93beb7fcf13d.png">
+<img width="803" alt="image" src="https://user-images.githubusercontent.com/7894265/198680835-d6ad3cfa-af92-46dc-9f3c-ea30f7e7c94e.png">
 
 - パスワードリセット通知のメールの日本語化も対応
-<img width="808" alt="image" src="https://user-images.githubusercontent.com/7894265/197893683-b83215b3-6e0f-4e5d-816e-b13093ea8b32.png">
+<img width="803" alt="image" src="https://user-images.githubusercontent.com/7894265/198681087-3847b5f8-98c5-4b3f-b8b7-444167e1e6b8.png">
 
 
 ## 日本語のカスタマイズ
