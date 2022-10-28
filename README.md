@@ -103,6 +103,48 @@ composer test
 composer analyse
 ```
 
+## メールのテスト方法
+Breezeはユーザ登録されたメールアドレスを確認するメールやパスワードリセットをユーザ自身で出来るパスワードリセットメールを送信します<br>
+これらのメールの日本語化が出来てるかをmailhogを使えばお手軽に可能です<br>
+(`MAIL_MAILER=log`という方法もありますが、日本語はlogファイル内で文字化けてしまい辛い🫠)
+
+- Laravelは標準の`.env`ファイルにmailhogを使用するサンプルが書かれているので、こいつをちょっといじります
+
+```vim
+MAIL_MAILER=smtp
+MAIL_HOST=localhost //ここをlocalhostに変えてね
+MAIL_PORT=1025
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+MAIL_FROM_ADDRESS="hello@example.com"
+MAIL_FROM_NAME="${APP_NAME}"
+```
+
+- macOSの場合は[Homebrew](https://brew.sh)をお使いだと思うので、brewでmailhogを入れます(まだ入れてないなら)
+
+```bash
+brew install mailhog
+```
+> **メモ：Macじゃない人は[こちら](https://www.apple.com/jp/)**
+<br>
+
+- mailhogを起動します
+
+```bash
+mailhog
+```
+> **メモ：(初回はネットワーク接続を許可する？とポップアップが出るので許可してください)**
+<br>
+
+- mailhog確認画面にアクセスします
+
+ブラウザを開いて[http://localhost:8025](http://localhost:8025)にアクセスします
+
+<img width="1170" alt="image" src="https://user-images.githubusercontent.com/7894265/198750115-30c28afe-b239-4ff3-b844-5c96238f18c0.png">
+
+あら、便利💓
+
 ## 変更履歴
 
 最近の変更履歴については[CHANGELOG](CHANGELOG.md)を参照してください
