@@ -2,6 +2,14 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.1.1 - 2022-10-28
+
+### What's Changed
+
+- Fix type error by @askdkc in https://github.com/askdkc/breezejp/pull/8
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.1.0...v1.1.1
+
 ## v1.1.0 - 2022-10-28
 
 ### What's Changed
