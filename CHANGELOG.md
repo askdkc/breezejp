@@ -2,6 +2,17 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.1.0 - 2022-10-28
+
+### What's Changed
+
+#### 今回の更新でついにメール通知についていた不要な末尾の , をパッケージ側で対処
+
+- Add Screenshot by @askdkc in https://github.com/askdkc/breezejp/pull/4
+- Fix: remove unnecessary comma from email template by @askdkc in https://github.com/askdkc/breezejp/pull/6
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.0.2...v1.1.0
+
 ## v1.0.2 - 2022-10-25
 
 ### What's Changed
