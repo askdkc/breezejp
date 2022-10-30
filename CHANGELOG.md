@@ -2,6 +2,15 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.1.3 - 2022-10-30
+
+### What's Changed
+
+- Add how to use Mailtrap for testing in README by @askdkc in https://github.com/askdkc/breezejp/pull/10
+- Change minimum PHP ver from 8.1 to 8.0.2 by @askdkc in https://github.com/askdkc/breezejp/pull/11
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.1.2...v1.1.3
+
 ## v1.1.2 - 2022-10-28
 
 ### What's Changed
