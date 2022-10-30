@@ -1,6 +1,6 @@
 {
     "name": "askdkc/breezejp",
-    "description": "Laravel Breezeを日本語化します / This package provides Japanese translation to Laravel Breeze package",
+    "description": "Laravel Breezeを一瞬で日本語化します(Laravel標準の各種バリデーションも日本語化します) / This package provides Japanese translation to Laravel Breeze package and also validation messages",
     "keywords": [
         "askdkc",
         "laravel",
