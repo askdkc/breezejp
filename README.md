@@ -151,6 +151,8 @@ mailhog
 古いバージョンのLaravelではMailtrapが`.env`にサンプルで書かれていたので、Mailtrapを使う方法も書いておきます
 
 - まずはサインアップ
+
+
 [Mailtrap](https://mailtrap.io)にアクセスしてサインアップします（GitHubアカウント連携とか楽で良いです）
 <img width="640" alt="image" src="https://user-images.githubusercontent.com/7894265/198857616-cd1ca19c-51a3-4144-9586-97cdffa8925b.png">
 
