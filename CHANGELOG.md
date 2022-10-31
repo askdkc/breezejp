@@ -2,6 +2,14 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.1.4 - 2022-10-31
+
+### What's Changed
+
+- Add more validation attributes by @askdkc in https://github.com/askdkc/breezejp/pull/12
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.1.3...v1.1.4
+
 ## v1.1.3 - 2022-10-30
 
 ### What's Changed
