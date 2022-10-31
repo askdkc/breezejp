@@ -197,6 +197,19 @@ MAIL_FROM_NAME="${APP_NAME}"
 あらあら、便利💓
 
 
+## Laravel Langと何が違うの？
+
+確かに🦀　[https://laravel-lang.com](https://laravel-lang.com)ってのが世の中にありましたね。。。<br>
+（作る前に存在を知っておけば良かったぜ🤦‍♂️）
+
+Laravel Breezeのメリットとしては、今のところ次の2点です:
+
+- この日本語READMEの分かりやすさ（そうであって欲しい）
+- Breezeが送るメールに余計なカンマが含まれたりする👇部分が修正されてる
+<img width="640" alt="image" src="https://user-images.githubusercontent.com/7894265/198923216-ded83143-6f99-44d8-a5d1-50afeba59940.png">
+
+あとは動きも殆ど一緒（単に言語ファイルをlangに作ってくれる）なので、出力されたファイルを必要に応じて自由にカスタマイズしてご利用願います💓
+
 ## 変更履歴
 
 最近の変更履歴については[CHANGELOG](CHANGELOG.md)を参照してください
