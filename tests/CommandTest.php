@@ -7,3 +7,11 @@ it('runs setup command without error', closure: function () {
         ->expectsOutput('日本語ファイルのインストールが完了しました!')
         ->assertExitCode(0);
 });
+
+it('can see published files', closure: function () {
+    $this->assertFileExists(base_path('lang/ja.json'));
+    $this->assertFileExists(base_path('lang/ja/auth.php'));
+    $this->assertFileExists(base_path('lang/ja/pagination.php'));
+    $this->assertFileExists(base_path('lang/ja/passwords.php'));
+    $this->assertFileExists(base_path('lang/ja/validation.php'));
+});
