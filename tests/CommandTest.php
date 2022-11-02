@@ -14,7 +14,7 @@ it('can see published files', closure: function () {
         ->expectsConfirmation('GitHubリポジトリにスターの御協力をお願いします🙏', 'no')
         ->expectsOutput('日本語ファイルのインストールが完了しました!')
         ->assertExitCode(0);
-    
+
     $this->assertFileExists(base_path('lang/ja.json'));
     $this->assertFileExists(base_path('lang/ja/auth.php'));
     $this->assertFileExists(base_path('lang/ja/pagination.php'));
