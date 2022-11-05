@@ -28,5 +28,5 @@
     "You are receiving this email because we received a password reset request for your account.": "このメールはパスワードのリセットリクエストにより送信されています",
     "This password reset link will expire in :count minutes.": "このパスワードリセット用リンクは :count分で有効期限が切れます",
     "If you did not request a password reset, no further action is required.": "パスワードのリセットリクエストをしていない場合には、本メールへの対応は不要です",
-    "Regards": "以上、よろしくお願い申し上げます"
+    "Regards": "よろしくお願い申し上げます"
 }
