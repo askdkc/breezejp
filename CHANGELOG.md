@@ -2,6 +2,22 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.1.5 - 2022-11-10
+
+### What's Changed
+
+- Add file publish tests by @askdkc in https://github.com/askdkc/breezejp/pull/13
+- Add php 8.0 to test by @askdkc in https://github.com/askdkc/breezejp/pull/14
+- Bump dependabot/fetch-metadata from 1.3.4 to 1.3.5 by @dependabot in https://github.com/askdkc/breezejp/pull/15
+- lowercase と mac_address の翻訳追加 by @nshiro in https://github.com/askdkc/breezejp/pull/16
+
+### New Contributors
+
+- @dependabot made their first contribution in https://github.com/askdkc/breezejp/pull/15
+- @nshiro made their first contribution in https://github.com/askdkc/breezejp/pull/16
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.1.4...v1.1.5
+
 ## v1.1.4 - 2022-10-31
 
 ### What's Changed
