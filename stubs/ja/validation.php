@@ -57,6 +57,7 @@ return [
     'ipv4' => ':attributeには、有効なIPv4アドレスを指定してください。',
     'ipv6' => ':attributeには、有効なIPv6アドレスを指定してください。',
     'json' => ':attributeには、有効なJSON文字列を指定してください。',
+    'lowercase' => ':attributeは、小文字のみで指定してください。',
     'lt' => [
         'numeric' => ':attributeには、:valueより小さな値を指定してください。',
         'file' => ':attributeには、:value kbより小さなファイルを指定してください。',
@@ -69,6 +70,7 @@ return [
         'string' => ':attributeは、:value文字以下で指定してください。',
         'array' => ':attributeには、:value個以下のアイテムを指定してください。',
     ],
+    'mac_address' => ':attributeには、有効なMACアドレスを指定してください。',
     'max' => [
         'numeric' => ':attributeには、:max以下の数字を指定してください。',
         'file' => ':attributeには、:max kb以下のファイルを指定してください。',
