@@ -1,15 +1,10 @@
 <?php
-
-it('setup command failed with an error', closure: function () {
-    $this->artisan('breezejp')
-        ->expectsOutput('Laravel Breeze用に日本語翻訳ファイルを準備します')
-        ->expectsOutput('Laravel BreezeのProfile用に翻訳可能なbladeを準備します')
-        ->assertExitCode(1);
-});
-
-// この下のテスト後で修正
-
+//
+//use Illuminate\Http\Testing\File;
+//
 //it('runs setup command without error', closure: function () {
+//    File::fake()->create(resource_path('views/profile/') . 'dummy.php', 10);
+//
 //    $this->artisan('breezejp')
 //        ->expectsOutput('Laravel Breeze用に日本語翻訳ファイルを準備します')
 //        ->expectsOutput('Laravel BreezeのProfile用に翻訳可能なbladeを準備します')
@@ -19,6 +14,8 @@ it('setup command failed with an error', closure: function () {
 //});
 //
 //it('can see published files', closure: function () {
+//    File::fake()->create(resource_path('views/profile/') . 'dummy.php', 10);
+//
 //    $this->artisan('breezejp')
 //        ->expectsOutput('Laravel Breeze用に日本語翻訳ファイルを準備します')
 //        ->expectsConfirmation('GitHubリポジトリにスターの御協力をお願いします🙏', 'no')
