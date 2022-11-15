@@ -1,6 +1,7 @@
 {
     "Name": "名前",
-    "Profile": "プロフィール",
+    "Profile": "アカウント",
+    "Profile Information": "アカウント情報",
     "Cancel": "キャンセル",
     "Delete Account": "アカウントを削除",
     "Email": "メールアドレス",
