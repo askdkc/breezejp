@@ -82,6 +82,9 @@ http://localhost:8000/ にアクセス
 - パスワードリセット通知のメールの日本語化も対応
 <img width="803" alt="image" src="https://user-images.githubusercontent.com/7894265/198681087-3847b5f8-98c5-4b3f-b8b7-444167e1e6b8.png">
 
+- breeze v1.15から追加されたProfile画面の日本語化も対応
+<img width="1328" alt="image" src="https://user-images.githubusercontent.com/7894265/202037944-36089328-6ab7-4cc5-81b3-47355b05ad45.png">
+
 
 ## 日本語のカスタマイズ
 言語ファイルは下記ディレクトリに出力されていますので、こちらのファイルの中身を修正することで自由にカスタマイズ可能です
