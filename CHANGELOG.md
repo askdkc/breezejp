@@ -2,6 +2,16 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.2.1 - 2022-11-15
+
+### What's Changed
+
+#### Now this package can fully translate Breeze Profile page
+
+- Add Intl Version of Breeze Profile Template by @askdkc in https://github.com/askdkc/breezejp/pull/22
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.2.0...v1.2.1
+
 ## v1.2.0 - 2022-11-15
 
 ### What's Changed
