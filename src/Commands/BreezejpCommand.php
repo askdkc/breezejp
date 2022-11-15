@@ -19,8 +19,9 @@ class BreezejpCommand extends Command
         (new Filesystem)->copyDirectory(__DIR__.'/../../stubs/lang/', lang_path());
 
         $this->info('Laravel BreezeのProfile用に翻訳可能なbladeを準備します');
-        if(!(new Filesystem)->exists(resource_path('views/profile/'))) {
+        if (! (new Filesystem)->exists(resource_path('views/profile/'))) {
             $this->warn('先にLaravel Breezeをインストールしてください');
+
             return self::FAILURE;
         }
         (new Filesystem)->ensureDirectoryExists(resource_path('views/profile/'));
