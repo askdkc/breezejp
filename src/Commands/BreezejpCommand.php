@@ -16,7 +16,17 @@ class BreezejpCommand extends Command
         $this->info('Laravel Breeze用に日本語翻訳ファイルを準備します');
 
         (new Filesystem)->ensureDirectoryExists(lang_path());
-        (new Filesystem)->copyDirectory(__DIR__.'/../../stubs/', lang_path());
+        (new Filesystem)->copyDirectory(__DIR__.'/../../stubs/lang/', lang_path());
+
+        $this->info('Laravel BreezeのProfile用に翻訳可能なbladeを準備します');
+        if (! (new Filesystem)->exists(resource_path('views/profile/'))) {
+            $this->warn('先にLaravel Breezeをインストールしてください');
+            $this->warn('その後、breezejpコマンドの再実行をお願いします');
+
+            return self::FAILURE;
+        }
+        (new Filesystem)->ensureDirectoryExists(resource_path('views/profile/'));
+        (new Filesystem)->copyDirectory(__DIR__.'/../../stubs/default/resources/views', resource_path('views'));
 
         if ($this->confirm('GitHubリポジトリにスターの御協力をお願いします🙏', true)) {
             $repoUrl = 'https://github.com/askdkc/breezejp';
