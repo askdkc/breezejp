@@ -115,6 +115,7 @@ return [
     'timezone' => ':attributeには、有効なゾーンを指定してください。',
     'unique' => ':attributeの値は既に存在しています。',
     'uploaded' => ':attributeのアップロードに失敗しました。',
+    'uppercase' => ':attributeは、大文字のみで指定してください。',
     'url' => ':attributeに正しい形式を指定してください。',
     'uuid' => ':attributeに有効なUUIDを指定してください。',
 
