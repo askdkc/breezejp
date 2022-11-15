@@ -2,6 +2,16 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.1.6 - 2022-11-15
+
+### What's Changed
+
+- uppercase の翻訳追加 by @nshiro in https://github.com/askdkc/breezejp/pull/18
+
+Thanks! @nshiro san.
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.1.5...v1.1.6
+
 ## v1.1.5 - 2022-11-10
 
 ### What's Changed
