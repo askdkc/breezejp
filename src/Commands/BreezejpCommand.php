@@ -22,6 +22,7 @@ class BreezejpCommand extends Command
         if (! (new Filesystem)->exists(resource_path('views/profile/'))) {
             $this->warn('先にLaravel Breezeをインストールしてください');
             $this->warn('その後、breezejpコマンドの再実行をお願いします');
+
             return self::FAILURE;
         }
         (new Filesystem)->ensureDirectoryExists(resource_path('views/profile/'));
