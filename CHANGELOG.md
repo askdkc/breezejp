@@ -2,6 +2,16 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.2.0 - 2022-11-15
+
+### What's Changed
+
+- Add Breeze Profile Support by @askdkc in https://github.com/askdkc/breezejp/pull/19
+- Add Breeze Profile Translation by @askdkc in https://github.com/askdkc/breezejp/pull/20
+- Add Breeze Profile Translation by @askdkc in https://github.com/askdkc/breezejp/pull/21
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.1.6...v1.1.7
+
 ## v1.1.6 - 2022-11-15
 
 ### What's Changed
