@@ -1,4 +1,4 @@
-# Laravel Breeze 日本語化パッケージ
+# Laravel Breeze 日本語化パッケージ：Breezejp
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/askdkc/breezejp.svg?style=flat-square)](https://packagist.org/packages/askdkc/breezejp)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/askdkc/breezejp/run-tests?label=tests)](https://github.com/askdkc/breezejp/actions?query=workflow%3Arun-tests+branch%3Amain)
@@ -12,7 +12,17 @@ Laravel Breezeをインストールした後にインストールしてくださ
 <img src="https://user-images.githubusercontent.com/7894265/198011737-c40cedc8-9f5d-4517-8407-93b2844bbeb2.gif" width="600">
 
 
-## インストール
+## 使い方
+### まずはLaravel Breezeのインストール
+```bash
+composer require laravel/breeze --dev
+php artisan breeze:install
+
+php artisan migrate
+```
+
+### そしてこのBreezejpパッケージのインストール
+#### (このパッケージのインストールよりも先に上記のLaravel Breezeをインストール願います)
 
 composerを使ってインストールしてください:
 
@@ -34,15 +44,6 @@ Laravel Breeze用に日本語翻訳ファイルを準備します
  
  Thank you! / ありがとう💓
 日本語ファイルのインストールが完了しました!
-```
-
-## 使い方
-### Laravel Breezeのインストール
-```bash
-composer require laravel/breeze --dev
-php artisan breeze:install
-
-php artisan migrate
 ```
 
 ### Laravelの言語設定
