@@ -17,7 +17,7 @@ class TestCase extends Orchestra
         );
 
         // コマンドが出力したファイルがテスト前に残っていたら消す
-        if(is_dir(__DIR__.'/../vendor/orchestra/testbench-core/laravel/lang/ja')) {
+        if (is_dir(__DIR__.'/../vendor/orchestra/testbench-core/laravel/lang/ja')) {
             unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/lang/ja.json');
             unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/lang/ja/auth.php');
             unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/lang/ja/pagination.php');
@@ -26,7 +26,7 @@ class TestCase extends Orchestra
             rmdir(__DIR__.'/../vendor/orchestra/testbench-core/laravel/lang/ja');
         }
 
-        if(is_dir(__DIR__.'/../vendor/orchestra/testbench-core/laravel/resources/views/profile')) {
+        if (is_dir(__DIR__.'/../vendor/orchestra/testbench-core/laravel/resources/views/profile')) {
             unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/resources/views/profile/edit.blade.php');
             unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/resources/views/profile/partials/delete-user-form.blade.php');
             unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/resources/views/profile/partials/update-password-form.blade.php');

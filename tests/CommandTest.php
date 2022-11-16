@@ -1,7 +1,6 @@
 <?php
 
 test('breezejp command stop successfully because Breeze is not installed', closure: function () {
-
     $this->artisan('breezejp')
         ->expectsOutput('Laravel Breeze用に日本語翻訳ファイルを準備します')
         ->expectsOutput('Laravel BreezeのProfile用に翻訳可能なbladeを準備します')
@@ -27,5 +26,3 @@ test('breezejp command forcefully run and see all the published files', closure:
     $this->assertFileExists(base_path('lang/ja/passwords.php'));
     $this->assertFileExists(base_path('lang/ja/validation.php'));
 });
-
-
