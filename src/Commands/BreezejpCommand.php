@@ -49,7 +49,6 @@ class BreezejpCommand extends Command
 
                 return self::SUCCESS;
             }
-            dump(self::FAILURE);
 
             return self::FAILURE;
         }
