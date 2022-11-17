@@ -2,6 +2,17 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.2.2 - 2022-11-17
+
+### What's Changed
+
+- Update Package Description by @askdkc in https://github.com/askdkc/breezejp/pull/23
+- Update breezejp command by @askdkc in https://github.com/askdkc/breezejp/pull/24
+- Fix: delete debug line by @askdkc in https://github.com/askdkc/breezejp/pull/26
+- Add missing translation by @askdkc in https://github.com/askdkc/breezejp/pull/27
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.2.1...v1.2.2
+
 ## v1.2.1 - 2022-11-15
 
 ### What's Changed
