@@ -25,15 +25,6 @@ class TestCase extends Orchestra
             unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/lang/ja/validation.php');
             rmdir(__DIR__.'/../vendor/orchestra/testbench-core/laravel/lang/ja');
         }
-
-        if (is_dir(__DIR__.'/../vendor/orchestra/testbench-core/laravel/resources/views/profile')) {
-            unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/resources/views/profile/edit.blade.php');
-            unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/resources/views/profile/partials/delete-user-form.blade.php');
-            unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/resources/views/profile/partials/update-password-form.blade.php');
-            unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/resources/views/profile/partials/update-profile-information-form.blade.php');
-            rmdir(__DIR__.'/../vendor/orchestra/testbench-core/laravel/resources/views/profile/partials');
-            rmdir(__DIR__.'/../vendor/orchestra/testbench-core/laravel/resources/views/profile');
-        }
     }
 
     protected function getPackageProviders($app)
