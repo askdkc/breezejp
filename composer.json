@@ -2,9 +2,10 @@
     "name": "askdkc/breezejp",
     "description": "Laravel Breezeを一瞬で日本語化します(Laravelv1.15のProfileにも対応、かつ標準の各種バリデーションも日本語化します) / This package provides Japanese translation to Laravel Breeze package, including newly added Profile Page (added in v1.15.x) and also validation messages",
     "keywords": [
-        "askdkc",
+        "breeze",
         "laravel",
-        "breezejp"
+        "japanese",
+        "translation"
     ],
     "homepage": "https://github.com/askdkc/breezejp",
     "license": "MIT",
