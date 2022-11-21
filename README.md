@@ -5,6 +5,26 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/askdkc/breezejp/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/askdkc/breezejp/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/askdkc/breezejp.svg?style=flat-square)](https://packagist.org/packages/askdkc/breezejp)
 
+## テーブルオブコンテンツ
+- [はじめに](#はじめに)
+- [使い方](#使い方)
+  - [まずはBreezeのインストール](#まずはlaravel-breezeのインストール)
+  - [そしてこのBreezejpパッケージのインストール](#そしてこのbreezejpパッケージのインストール)
+  - [Laravelの言語設定](#laravelの言語設定)
+  - [動作確認](#動作確認)
+- [日本語のカスタマイズ](#日本語のカスタマイズ)
+- [テスト方法](#テスト方法)
+- [メールのテスト方法](#メールのテスト方法)
+  - [mailhogを使うやり方](#mailhogを使うやり方)
+  - [mailtrapを使うやり方](#mailtrapを使うやり方)
+- [Laravel Langと何が違うの？](#laravel-langと何が違うの)
+- [変更履歴](#変更履歴)
+- [貢献について](#貢献について)
+- [セキュリティや脆弱性について](#セキュリティや脆弱性について)
+- [貢献者](#貢献者)
+- [ライセンス](#ライセンス)
+
+## はじめに
 このパッケージはLaravel Breezeを日本語化するパッケージです。<br>
 Laravel Breezeをインストールした後にインストールしてください。<br>
 翻訳ファイルをLaravelの`lang`ディレクトリ配下に出力して日本語化していますので、詳しくはこのREADMEの[日本語のカスタマイズ](#日本語のカスタマイズ)をご確認願います。
