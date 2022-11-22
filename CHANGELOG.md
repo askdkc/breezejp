@@ -2,6 +2,15 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.2.3 - 2022-11-22
+
+### What's Changed
+
+- Add Table of Contents to README by @askdkc in https://github.com/askdkc/breezejp/pull/29
+- No more self template for Profile page, because Laravel Breeze now provides `{{ __() }}` syntax for all texts by @askdkc in https://github.com/askdkc/breezejp/pull/28
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.2.2...v1.2.3
+
 ## v1.2.2 - 2022-11-17
 
 ### What's Changed
