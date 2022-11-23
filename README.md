@@ -36,6 +36,9 @@ Laravel Breezeをインストールした後にインストールしてくださ
 ### まずはLaravel Breezeのインストール
 ```bash
 composer require laravel/breeze --dev
+
+php artisan breeze:install --dark
+(ダークモードが不要な人は👇 --darkオプション無しで実行)
 php artisan breeze:install
 
 php artisan migrate
