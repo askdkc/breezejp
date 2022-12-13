@@ -13,6 +13,7 @@ return [
     'alpha_dash' => ':attributeはアルファベットとダッシュ(-)及び下線(_)がご利用できます。',
     'alpha_num' => ':attributeはアルファベット数字がご利用できます。',
     'array' => ':attributeは配列でなくてはなりません。',
+    'ascii' => ':attributeは半角の英数字や記号のみで指定してください。',
     'before' => ':attributeには、:dateより前の日付をご利用ください。',
     'before_or_equal' => ':attributeには、:date以前の日付をご利用ください。',
     'between' => [
@@ -117,6 +118,7 @@ return [
     'uploaded' => ':attributeのアップロードに失敗しました。',
     'uppercase' => ':attributeは、大文字のみで指定してください。',
     'url' => ':attributeに正しい形式を指定してください。',
+    'ulid' => ':attributeに有効なULIDを指定してください。',
     'uuid' => ':attributeに有効なUUIDを指定してください。',
 
     /*
