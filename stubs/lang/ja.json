@@ -22,7 +22,7 @@
     "You're logged in!": "ログインしました",
     "Reset Password": "パスワードのリセット",
     "Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.": "アカウントを削除すると、全てのデータとファイルも完全に削除されます。アカウントを削除する前に必要なデータがあれば事前にダウンロードの実施をお願いします。",
-    "Are you sure your want to delete your account?": "アカウントを削除して本当に大丈夫ですか？",
+    "Are you sure you want to delete your account?": "アカウントを削除して本当に大丈夫ですか？",
     "Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account.": "アカウントを削除すると、全てのデータとファイルも完全に削除されます。完全にアカウントを削除するためには、確認のために再度パスワードを入力してください。",
     "Update your account's profile information and email address.": "アカウント情報とメールアドレスを更新できます",
     "Your email address is unverified.": "メールアドレスが未確認です",
