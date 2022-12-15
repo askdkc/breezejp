@@ -2,6 +2,16 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.2.4 - 2022-12-15
+
+### What's Changed
+
+- Update README to add dark mode by @askdkc in https://github.com/askdkc/breezejp/pull/31
+- Add uuid and ascii validation translation by @nshiro in https://github.com/askdkc/breezejp/pull/33
+- Fix Typo Translation by @askdkc in https://github.com/askdkc/breezejp/pull/32
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.2.3...v1.2.4
+
 ## v1.2.3 - 2022-11-22
 
 ### What's Changed
