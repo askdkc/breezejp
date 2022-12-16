@@ -25,6 +25,11 @@ class TestCase extends Orchestra
             unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/lang/ja/validation.php');
             rmdir(__DIR__.'/../vendor/orchestra/testbench-core/laravel/lang/ja');
         }
+
+        // config/app.phpのlocaleをenに戻す
+        $configfile = file_get_contents(__DIR__.'/../vendor/orchestra/testbench-core/laravel/config/app.php');
+        $configfile = str_replace("'locale' => 'ja'", "'locale' => 'en'", $configfile);
+        file_put_contents(__DIR__.'/../vendor/orchestra/testbench-core/laravel/config/app.php', $configfile);
     }
 
     protected function getPackageProviders($app)
