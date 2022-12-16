@@ -2,6 +2,14 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.3.0 - 2022-12-16
+
+### What's Changed
+
+- Add Auto Locale Update Feature by @askdkc in https://github.com/askdkc/breezejp/pull/34
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.2.4...v1.3.0
+
 ## v1.2.4 - 2022-12-15
 
 ### What's Changed
