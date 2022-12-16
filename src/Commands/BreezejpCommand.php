@@ -18,6 +18,16 @@ class BreezejpCommand extends Command
         (new Filesystem)->ensureDirectoryExists(lang_path());
         (new Filesystem)->copyDirectory(__DIR__.'/../../stubs/lang/', lang_path());
 
+        $this->info('config/app.phpのlocaleをjaにします');
+        // Read the contents of the file into a string
+        $configfile = file_get_contents(base_path('config/app.php'));
+
+        // Modify the contents of the string
+        $configfile = str_replace("'locale' => 'en'", "'locale' => 'ja'", $configfile);
+
+        // Save the modified contents back to the file
+        file_put_contents(base_path('config/app.php'), $configfile);
+
         if ($this->confirm('GitHubリポジトリにスターの御協力をお願いします🙏', true)) {
             $repoUrl = 'https://github.com/askdkc/breezejp';
 
