@@ -72,9 +72,9 @@ config/app.phpのlocaleをjaにします
 ```
 
 ### Laravelの言語設定
-BreezejpはLaravelの設定ファイル`config/app.php`のlocaleを自動でenからjaに変更します
+BreezejpはLaravelの設定ファイル`config/app.php`のlocaleを自動でenからjaに変更します👍
 
-具体的にはインストール時にこうなります
+具体的にはインストール時に自動でこうなります👀✨
 
 ```vim
 ---config/app.php:インストール前---
