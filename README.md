@@ -23,6 +23,7 @@
 - [セキュリティや脆弱性について](#セキュリティや脆弱性について)
 - [貢献者](#貢献者)
 - [ライセンス](#ライセンス)
+- [パッケージ作りに興味がある人は](#パッケージ作りに興味がある人は)
 
 ## はじめに
 このパッケージはLaravel Breezeを日本語化するパッケージです。<br>
@@ -236,6 +237,7 @@ MAIL_FROM_NAME="${APP_NAME}"
 
 このBreezejpパッケージのメリットとしては、今のところ次の2点です:
 
+- `breezejp`コマンド一発で言語設定含めて日本語化完了（手間が段違い）
 - この日本語READMEの分かりやすさ（そうであって欲しい）
 - Breezeが送るメールに余計なカンマが含まれたりする👇部分が修正されてる（ときめかないカンマ全部消した💅）
 <img width="640" alt="image" src="https://user-images.githubusercontent.com/7894265/198923216-ded83143-6f99-44d8-a5d1-50afeba59940.png">
@@ -262,3 +264,7 @@ MAIL_FROM_NAME="${APP_NAME}"
 ## ライセンス
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+## パッケージ作りに興味がある人は
+
+[こちらにパッケージの作り方を書いた](https://github.com/askdkc/create-laravel-package)ので参考にしてみてね
