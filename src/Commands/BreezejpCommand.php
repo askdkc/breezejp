@@ -24,6 +24,7 @@ class BreezejpCommand extends Command
 
         // Modify the contents of the string
         $configfile = str_replace("'locale' => 'en'", "'locale' => 'ja'", $configfile);
+        $configfile = str_replace("'faker_locale' => 'en_US'", "'faker_locale' => 'ja_JP'", $configfile);
 
         // Save the modified contents back to the file
         file_put_contents(base_path('config/app.php'), $configfile);
