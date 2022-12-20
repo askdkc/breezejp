@@ -28,7 +28,6 @@ class BreezejpCommand extends Command
         // Save the modified contents back to the file
         file_put_contents(base_path('config/app.php'), $configfile);
 
-
         if ($this->confirm('GitHubリポジトリにスターの御協力をお願いします🙏', true)) {
             $repoUrl = 'https://github.com/askdkc/breezejp';
 

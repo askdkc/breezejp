@@ -14,7 +14,7 @@ test('breezejp command successfully run and see all the published files', closur
     $this->assertFileExists(base_path('lang/ja/validation.php'));
 });
 
-test('breezejp command successfully update config/app.php locale to ja', function (){
+test('breezejp command successfully update config/app.php locale to ja', function () {
     $this->artisan('breezejp')
         ->expectsOutput('Laravel Breeze用に日本語翻訳ファイルを準備します')
         ->expectsConfirmation('GitHubリポジトリにスターの御協力をお願いします🙏', 'no')
