@@ -2,6 +2,18 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.4.0 - 2022-12-20
+
+### What's Changed
+
+- Fix Badge Icons by @askdkc in https://github.com/askdkc/breezejp/pull/35
+- Update run-tests.yml by @askdkc in https://github.com/askdkc/breezejp/pull/36
+- Update README.md by @askdkc in https://github.com/askdkc/breezejp/pull/37
+- Add feature to change faker_locale to ja_JP by @askdkc in https://github.com/askdkc/breezejp/pull/39
+- Add Jetstream Support just for fun by @askdkc in https://github.com/askdkc/breezejp/pull/38
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.3.0...v1.4.0
+
 ## v1.3.0 - 2022-12-16
 
 ### What's Changed
