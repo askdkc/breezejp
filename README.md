@@ -18,6 +18,7 @@
   - [mailhogを使うやり方](#mailhogを使うやり方)
   - [mailtrapを使うやり方](#mailtrapを使うやり方)
 - [Laravel Langと何が違うの？](#laravel-langと何が違うの)
+- [おまけ](#おまけ)
 - [変更履歴](#変更履歴)
 - [貢献について](#貢献について)
 - [セキュリティや脆弱性について](#セキュリティや脆弱性について)
@@ -243,6 +244,11 @@ MAIL_FROM_NAME="${APP_NAME}"
 <img width="640" alt="image" src="https://user-images.githubusercontent.com/7894265/198923216-ded83143-6f99-44d8-a5d1-50afeba59940.png">
 
 あとはLaravel Langと動きも殆ど一緒（単に言語ファイルをlangに作ってくれる）なので、出力されたファイルを必要に応じて自由にカスタマイズしてご利用願います💓
+
+## おまけ
+ついでにJetstreamの日本語化もできちゃいます🤫
+
+<img width="640" alt="jetstream" src="https://user-images.githubusercontent.com/7894265/208773006-2feea23e-ca45-4d40-9911-49f03db9ed4d.png">
 
 ## 変更履歴
 
