@@ -2,6 +2,14 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.4.2 - 2022-12-21
+
+### What's Changed
+
+- Add decimal translation by @nshiro in https://github.com/askdkc/breezejp/pull/43
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.4.1...v1.4.2
+
 ## v1.4.1 - 2022-12-20
 
 ### What's Changed
