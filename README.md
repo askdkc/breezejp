@@ -274,3 +274,5 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 ## パッケージ作りに興味がある人は
 
 [こちらにパッケージの作り方を書いた](https://github.com/askdkc/create-laravel-package)ので参考にしてみてね
+
+
