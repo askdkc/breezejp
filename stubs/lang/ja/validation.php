@@ -30,7 +30,7 @@ return [
     'date_format' => ':attributeは:format形式で指定してください。',
     'decimal' => ':attributeは、小数点以下:decimal桁の数字を指定してください。',
     'declined' => ':attributeは、拒否する指定をしてください。',
-    'declined_if' => ':attributeは、:otherが:valueの時は、拒否する指定をしてください。.',
+    'declined_if' => ':attributeは、:otherが:valueの時は、拒否する指定をしてください。',
     'different' => ':attributeと:otherには、異なった内容を指定してください。',
     'digits' => ':attributeは:digits桁で指定してください。',
     'digits_between' => ':attributeは:min桁から:max桁の間で指定してください。',
