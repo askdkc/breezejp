@@ -236,7 +236,7 @@ MAIL_FROM_NAME="${APP_NAME}"
 確かに🦀　[https://laravel-lang.com](https://laravel-lang.com)ってのが世の中にありましたね。。。<br>
 （作る前に存在を知っておけば良かったぜ🤦‍♂️）
 
-このBreezejpパッケージのメリットとしては、今のところ次の2点です:
+このBreezejpパッケージのメリットとしては、今のところ次の3点です:
 
 - `breezejp`コマンド一発で言語設定含めて日本語化完了（手間が段違い）
 - この日本語READMEの分かりやすさ（そうであって欲しい）
