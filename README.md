@@ -265,6 +265,7 @@ MAIL_FROM_NAME="${APP_NAME}"
 ## 貢献者
 
 - [askdkc](https://github.com/askdkc)
+- [nshiro](https://github.com/nshiro)
 - [All Contributors](../../contributors)
 
 ## ライセンス
