@@ -2,6 +2,24 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.5.0 - 2023-01-11
+
+### What's Changed
+
+### Laravel 10をサポートしました / Add support for Laravel 10
+
+#### その他の細かな点はこちら：
+
+- Fix not only 2 good parts but 3 by @askdkc in https://github.com/askdkc/breezejp/pull/44
+- Update fix-php-code-style-issues.yml by @askdkc in https://github.com/askdkc/breezejp/pull/45
+- Update pint-action from v2.0.0 to v2.1.0 by @askdkc in https://github.com/askdkc/breezejp/pull/46
+- Update composer.json by @askdkc in https://github.com/askdkc/breezejp/pull/48
+- Merge Updated Parts  by @askdkc in https://github.com/askdkc/breezejp/pull/49
+- Add Contributer by @askdkc in https://github.com/askdkc/breezejp/pull/47
+- Add Support for Laravel 10 by @askdkc in https://github.com/askdkc/breezejp/pull/50
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.4.2...v1.5.0
+
 ## v1.4.2 - 2022-12-21
 
 ### What's Changed
