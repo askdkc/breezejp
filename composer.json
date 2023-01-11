@@ -19,10 +19,10 @@
     "require": {
         "php": "^8.0",
         "spatie/laravel-package-tools": "^1.14.0",
-        "illuminate/contracts": "^9.28|10.0"
+        "illuminate/contracts": "^9.28|^10.0"
     },
     "require-dev": {
-        "laravel/pint": "^1.0",
+        "laravel/pint": "^1.4",
         "nunomaduro/collision": "^6.0",
         "nunomaduro/larastan": "^2.0.1",
         "orchestra/testbench": "^7.7|^8.0",
