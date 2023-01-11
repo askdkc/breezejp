@@ -7,7 +7,8 @@ parameters:
         - src
         - stubs
     tmpDir: build/phpstan
-    checkOctaneCompatibility: true
-    checkModelProperties: true
+    #Currently off for Laravel 10 support
+    #checkOctaneCompatibility: true
+    #checkModelProperties: true
     checkMissingIterableValueType: false
 
