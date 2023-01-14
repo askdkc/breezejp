@@ -2,6 +2,15 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.5.1 - 2023-01-14
+
+### What's Changed
+
+- Fix phpstan by @askdkc in https://github.com/askdkc/breezejp/pull/51
+- Fix Translation by @askdkc in https://github.com/askdkc/breezejp/pull/52
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.5.0...v1.5.1
+
 ## v1.5.0 - 2023-01-11
 
 ### What's Changed
