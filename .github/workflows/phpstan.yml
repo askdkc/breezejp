@@ -1,11 +1,7 @@
 name: PHPStan
 
 on:
-  push:
-    paths:
-      - '**.php'
-      - 'phpstan.neon.dist'
-  pull_request:
+  [push, pull_request]:
     paths:
       - '**.php'
       - 'phpstan.neon.dist'
