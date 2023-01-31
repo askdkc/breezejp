@@ -2,6 +2,18 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.5.3 - 2023-01-31
+
+### What's Changed
+
+#### Laravelに新規で追加されたバリデーションルール（missing）に対応しました🎉
+
+- Add translations for missing, etc by @nshiro in https://github.com/askdkc/breezejp/pull/57
+
+@nshiro さん、ありがとう〜💓
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.5.2...v1.5.3
+
 ## v1.5.2 - 2023-01-30
 
 ### What's Changed
