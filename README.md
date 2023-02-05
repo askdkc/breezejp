@@ -39,9 +39,9 @@ Laravel Breezeをインストールした後にインストールしてくださ
 ```bash
 composer require laravel/breeze --dev
 
-php artisan breeze:install --dark
+php artisan breeze:install blade --dark
 (ダークモードが不要な人は👇 --darkオプション無しで実行)
-php artisan breeze:install
+php artisan breeze:install blade
 
 php artisan migrate
 ```
@@ -75,7 +75,7 @@ config/app.phpのlocaleをjaにします
 ### Laravelの言語設定
 BreezejpはLaravelの設定ファイル`config/app.php`のlocaleを自動でenからjaに変更します👍
 
-具体的にはインストール時に自動でこうなります👀✨
+具体的にはインストール時に自動でこうなりますので、特に何もしないでもOK👀✨💓
 
 ```vim
 ---config/app.php:インストール前---
