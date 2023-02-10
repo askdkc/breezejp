@@ -203,10 +203,10 @@ Breezeの`log in` > `パスワード忘れた？`リンクから登録に使用�
 便利💓
 
 ### mailhogを使うやり方
-これらのメールの日本語化が出来てるかをmailhogを使えばお手軽に可能です<br>
-(`MAIL_MAILER=log`という方法もありますが、日本語はlogファイル内で文字化けてしまい辛い🫠)
+mailpitに置き換わるまではLaravelではmailhogを使ったメールテストのやり方が一般的でした<br>
+(mailpitはこのmailhogが元になっているので使い方が完全に一緒です)
 
-- Laravelは標準の`.env`ファイルにmailhogを使用するサンプルが書かれているので、こいつをちょっといじります
+- `.env`ファイルを下記のようにちょっといじります
 
 ```vim
 MAIL_MAILER=smtp
