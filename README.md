@@ -15,6 +15,7 @@
 - [日本語のカスタマイズ](#日本語のカスタマイズ)
 - [テスト方法](#テスト方法)
 - [メールのテスト方法](#メールのテスト方法)
+  - [mailpitを使うやり方](#mailpitを使うやり方)
   - [mailhogを使うやり方](#mailhogを使うやり方)
   - [mailtrapを使うやり方](#mailtrapを使うやり方)
 - [Laravel Langと何が違うの？](#laravel-langと何が違うの)
@@ -147,6 +148,59 @@ composer analyse
 
 ## メールのテスト方法
 Breezeはユーザ登録されたメールアドレスを確認するメールやパスワードリセットをユーザ自身で出来るパスワードリセットメールを送信します
+
+
+### mailpitを使うやり方
+これらのメールの日本語化が出来てるかをmailpitを使えばお手軽に可能です<br>
+(`MAIL_MAILER=log`という方法もありますが、日本語はlogファイル内で文字化けてしまい辛い🫠)
+
+> **メモ：**
+> 2023/2/1にLaravelの`.env`のサンプルが[mailhogからmailpitに変更されました](https://github.com/laravel/laravel/commit/6092ff46b3d5e4436948b8d576894b51955f3a5e) <br>
+> mailpitは旧来のmailhogの機能強化版ですが、[使い方は一緒です]((#mailhogを使うやり方))
+
+- Laravelは標準の`.env`ファイルにmailpitを使用するサンプルが書かれているので、こいつをちょっといじります
+
+```vim
+MAIL_MAILER=smtp
+MAIL_HOST=localhost //ここをlocalhostに変えてね
+MAIL_PORT=1025
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+MAIL_FROM_ADDRESS="hello@example.com"
+MAIL_FROM_NAME="${APP_NAME}"
+```
+
+- macOSの場合は[Homebrew](https://brew.sh)をお使いだと思うので、brewでmailtapを入れます(まだ入れてないなら)
+
+```bash
+brew tap axllent/apps
+brew install mailpit
+```
+> **メモ：Macじゃない人は[こちら](https://www.apple.com/jp/)**
+<br>
+
+- mailpitを起動します
+
+```bash
+mailpit
+```
+> **メモ：(初回はネットワーク接続を許可する？とポップアップが出るので許可してください)**
+<br>
+
+- メール送信テスト
+
+Breezeの`log in` > `パスワード忘れた？`リンクから登録に使用したメールアドレスを入力しパスワードリセットリンクを送信します
+
+<img width="969" alt="image" src="https://user-images.githubusercontent.com/7894265/217967834-11c95cf5-322d-4d25-bfe4-0547de95e324.png">
+
+- mailpit確認画面にアクセスします
+
+ブラウザを開いて[http://localhost:8025](http://localhost:8025)にアクセスします
+
+<img width="1310" alt="image" src="https://user-images.githubusercontent.com/7894265/217968231-73bbb044-ebf3-4a65-91ab-251e8fb2b2d3.png">
+
+便利💓
 
 ### mailhogを使うやり方
 これらのメールの日本語化が出来てるかをmailhogを使えばお手軽に可能です<br>
