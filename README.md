@@ -156,7 +156,7 @@ Breezeはユーザ登録されたメールアドレスを確認するメール�
 
 > **メモ：**
 > 2023/2/1にLaravelの`.env`のサンプルが[mailhogからmailpitに変更されました](https://github.com/laravel/laravel/commit/6092ff46b3d5e4436948b8d576894b51955f3a5e) <br>
-> mailpitは旧来のmailhogの機能強化版ですが、[使い方は一緒です]((#mailhogを使うやり方))
+> mailpitは旧来のmailhogの機能強化版ですが、[使い方は一緒です](#mailhogを使うやり方)
 
 - Laravelは標準の`.env`ファイルにmailpitを使用するサンプルが書かれているので、こいつをちょっといじります
 
