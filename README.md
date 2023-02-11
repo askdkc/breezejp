@@ -82,13 +82,13 @@ BreezejpはLaravelの設定ファイル`config/app.php`のlocaleを自動でen�
 ---config/app.php:インストール前---
 'locale' => 'en',
 
-'faker_locale' => 'en_US'
+'faker_locale' => 'en_US',
 --------------------------------
 ↓
 ---config/app.php:インストール後---
 'locale' => 'ja',
 
-'faker_locale' => 'ja_JP'
+'faker_locale' => 'ja_JP',
 --------------------------------
 ```
 
