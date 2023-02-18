@@ -5,6 +5,9 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/askdkc/breezejp/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/askdkc/breezejp/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/askdkc/breezejp.svg?style=flat-square)](https://packagist.org/packages/askdkc/breezejp)
 
+## もちろん
+Laravel 10に対応してます👍
+
 ## テーブルオブコンテンツ
 - [はじめに](#はじめに)
 - [使い方](#使い方)
