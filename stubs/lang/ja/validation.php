@@ -206,6 +206,7 @@ return [
         'phone' => '電話番号',
         'photo' => '写真',
         'postal_code' => '郵便番号',
+        'prefecture' => '都道府県',
         'price' => '価格',
         'province' => '都道府県',
         'recaptcha_response_field' => 'recaptcha応答フィールド',
