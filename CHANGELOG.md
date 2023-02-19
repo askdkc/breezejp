@@ -2,6 +2,22 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.5.4 - 2023-02-19
+
+### What's Changed
+
+#### 言語設定だけでなくTimezoneの設定も自動で`Asia/Tokyo`に設定するようにしました
+
+- Update README.md by @askdkc in https://github.com/askdkc/breezejp/pull/58
+- Update README.md to Support new Breeze Install option by @askdkc in https://github.com/askdkc/breezejp/pull/59
+- Add Mailpit Example by @askdkc in https://github.com/askdkc/breezejp/pull/60
+- Update README.md by @askdkc in https://github.com/askdkc/breezejp/pull/61
+- Add phpunit ver 10 by @askdkc in https://github.com/askdkc/breezejp/pull/62
+- Add timezone support by @askdkc in https://github.com/askdkc/breezejp/pull/64
+- Add Timezone Change in ReadMe by @askdkc in https://github.com/askdkc/breezejp/pull/65
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.5.3...v1.5.4
+
 ## v1.5.3 - 2023-01-31
 
 ### What's Changed
