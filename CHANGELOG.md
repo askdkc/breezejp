@@ -2,6 +2,22 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.6.0 - 2023-03-14
+
+### What's Changed
+
+#### Laravel UIの翻訳を追加しました🎉
+
+- Update README.md by @askdkc in https://github.com/askdkc/breezejp/pull/63
+- Update composer.json by @askdkc in https://github.com/askdkc/breezejp/pull/66
+- Fix collision version by @askdkc in https://github.com/askdkc/breezejp/pull/67
+- Fix GitHub permission by @askdkc in https://github.com/askdkc/breezejp/pull/68
+- Update phpunit.xml.dist by @askdkc in https://github.com/askdkc/breezejp/pull/69
+- Update .gitignore by @askdkc in https://github.com/askdkc/breezejp/pull/70
+- Add Laravel UI Support by @askdkc in https://github.com/askdkc/breezejp/pull/71
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.5.4...v1.6.0
+
 ## v1.5.4 - 2023-02-19
 
 ### What's Changed
