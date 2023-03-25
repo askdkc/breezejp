@@ -1,10 +1,11 @@
 {
     "name": "askdkc/breezejp",
-    "description": "Laravel Breeze(とLaravel UIとJetstream)を一瞬で日本語化します(Laravelv1.15のProfileにも対応、かつ標準の各種バリデーションも日本語化します) / This package provides Japanese translation to Laravel Breeze package, including newly added Profile Page (added in v1.15.x) and also validation messages",
+    "description": "Laravel Breeze(とLaravel UIとJetstream)を標準の各種バリデーションや言語設定、タイムスタンプも含めて一瞬で日本語化対応 / This package provides Japanese translation to Laravel Breeze, Laravel UI and Jetstream package. It also privides Japanese validation messages",
     "keywords": [
         "breeze",
         "laravel",
         "laravel ui",
+        "jetstream",
         "japanese",
         "translation"
     ],
