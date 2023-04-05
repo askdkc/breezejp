@@ -2,6 +2,28 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.6.1 - 2023-04-05
+
+### What's Changed
+
+#### 今回の変更
+
+- 不足していた validaion エラーメッセージを追加しました
+- prohibited 系は、然るべき場所に移動しました
+
+@nshiro さん、いつもありがとうございます💕
+
+#### PR履歴
+
+- Update composer.json by @askdkc in https://github.com/askdkc/breezejp/pull/72
+- Bump aglipanci/laravel-pint-action from 2.1.0 to 2.2.0 by @dependabot in https://github.com/askdkc/breezejp/pull/73
+- Update README.md by @askdkc in https://github.com/askdkc/breezejp/pull/74
+- Update composer.json by @askdkc in https://github.com/askdkc/breezejp/pull/75
+- 2 to 4 by @askdkc in https://github.com/askdkc/breezejp/pull/76
+- Add missing validation messages by @nshiro in https://github.com/askdkc/breezejp/pull/77
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.6.0...v1.6.1
+
 ## v1.6.0 - 2023-03-14
 
 ### What's Changed
