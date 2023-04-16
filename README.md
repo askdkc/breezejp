@@ -1,9 +1,9 @@
 # Laravel Breeze 日本語化パッケージ：Breezejp
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/askdkc/breezejp.svg?style=flat-square)](https://packagist.org/packages/askdkc/breezejp)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/askdkc/breezejp/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/askdkc/breezejp/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/askdkc/breezejp/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/askdkc/breezejp/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/askdkc/breezejp.svg?style=flat-square)](https://packagist.org/packages/askdkc/breezejp)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/askdkc/breezejp.svg?style=round-square)](https://packagist.org/packages/askdkc/breezejp)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/askdkc/breezejp/run-tests.yml?branch=main&label=tests&style=round-square)](https://github.com/askdkc/breezejp/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/askdkc/breezejp/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=round-square)](https://github.com/askdkc/breezejp/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/askdkc/breezejp.svg?style=round-square)](https://packagist.org/packages/askdkc/breezejp)
 
 ## もちろん
 Laravel 10に対応してます👍
