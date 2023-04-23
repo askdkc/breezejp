@@ -47,14 +47,14 @@ Laravel 10に対応してます👍
 composer require laravel/breeze --dev
 
 php artisan breeze:install blade --dark
-(ダークモードが不要な人は👇 --darkオプション無しで実行)
+
+(もしダークモードが不要な人は👇のように末尾の --darkオプション無しで実行してね)
 php artisan breeze:install blade
 
 php artisan migrate
 ```
 
 ### そしてこのBreezejpパッケージのインストール
-#### (このパッケージのインストールよりも先に上記のLaravel Breezeをインストール願います)
 
 composerを使ってインストールしてください:
 
@@ -163,7 +163,7 @@ composer analyse
 ```
 
 ## メールのテスト方法
-Breezeはユーザ登録されたメールアドレスを確認するメールやパスワードリセットをユーザ自身で出来るパスワードリセットメールを送信します
+Laravel Breeze(Laravel UI、そしてJetstream)はユーザ登録されたメールアドレスを確認するメールやパスワードリセットをユーザ自身で出来るパスワードリセットメールを送信します
 
 
 ### mailpitを使うやり方
