@@ -2,6 +2,23 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.6.2 - 2023-06-02
+
+### What's Changed
+
+#### READMEの内容修正と依存パッケージのセキュリティ更新
+
+- Make Status Budge Icon Round by @askdkc in https://github.com/askdkc/breezejp/pull/78
+- Fix Status Badge Style by @askdkc in https://github.com/askdkc/breezejp/pull/79
+- Update README.md by @askdkc in https://github.com/askdkc/breezejp/pull/80
+- Bump dependabot/fetch-metadata from 1.3.6 to 1.4.0 by @dependabot in https://github.com/askdkc/breezejp/pull/81
+- Add CI option to PEST by @askdkc in https://github.com/askdkc/breezejp/pull/82
+- Bump dependabot/fetch-metadata from 1.4.0 to 1.5.1 by @dependabot in https://github.com/askdkc/breezejp/pull/83
+- Bump aglipanci/laravel-pint-action from 2.2.0 to 2.3.0 by @dependabot in https://github.com/askdkc/breezejp/pull/84
+- 説明を修正 by @askdkc in https://github.com/askdkc/breezejp/pull/85
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.6.1...v1.6.2
+
 ## v1.6.1 - 2023-04-05
 
 ### What's Changed
