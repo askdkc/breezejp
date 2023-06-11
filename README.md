@@ -153,7 +153,7 @@ php artisan breezejp
    └─ ja
        ├── auth.php ← 認証画面の警告メッセージの日本語ファイル
        ├── pagination.php ← ページ送りの日本語ファイル
-       ├── auth.php ← 認証画面のパスワード関係の日本語ファイル
+       ├── passwords.php ← 認証画面のパスワード関係の日本語ファイル
        └── validation.php ← 各種バリデーションの日本語ファイル
 ```
 
