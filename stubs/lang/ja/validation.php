@@ -23,6 +23,7 @@ return [
         'array' => ':attributeは、:min個から:max個の間で指定してください。',
     ],
     'boolean' => ':attributeは、trueかfalseを指定してください。',
+    'can' => ':attributeに権限のない値が含まれています。',
     'confirmed' => ':attributeと確認フィールドが一致していません。',
     'current_password' => 'パスワードが正しくありません。',
     'date' => ':attributeには有効な日付を指定してください。',
