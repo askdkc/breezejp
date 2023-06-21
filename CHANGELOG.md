@@ -2,6 +2,19 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.6.3 - 2023-06-21
+
+### What's Changed
+
+- Fixed file name in README by @murapong in https://github.com/askdkc/breezejp/pull/86
+- Add `can` error message by @nshiro in https://github.com/askdkc/breezejp/pull/87
+
+### New Contributors
+
+- @murapong made their first contribution in https://github.com/askdkc/breezejp/pull/86
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.6.2...v1.6.3
+
 ## v1.6.2 - 2023-06-02
 
 ### What's Changed
