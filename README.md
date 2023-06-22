@@ -169,7 +169,7 @@ Laravel Breeze(Laravel UI、そしてJetstream)はユーザ登録されたメー
 
 
 ### mailpitを使うやり方
-これらのメールの日本語化が出来てるかをmailpitを使えばお手軽に可能です<br>
+mailpitを使えば上記のメールの日本語化が問題なく出来ているかをお手軽に可能です<br>
 (`MAIL_MAILER=log`という方法もありますが、日本語はlogファイル内で文字化けてしまい辛い🫠)
 
 > **メモ：**
