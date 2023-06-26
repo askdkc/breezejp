@@ -2,6 +2,17 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.6.4 - 2023-06-26
+
+### What's Changed
+
+#### Laravelのページネーションの日本語化に対応しました👍
+
+- fix readme by @askdkc in https://github.com/askdkc/breezejp/pull/89
+- Add Pagination Translation by @askdkc in https://github.com/askdkc/breezejp/pull/90
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.6.3...v1.6.4
+
 ## v1.6.3 - 2023-06-21
 
 ### What's Changed
