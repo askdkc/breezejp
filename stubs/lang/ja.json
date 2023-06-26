@@ -132,5 +132,10 @@
     "You may accept this invitation by clicking the button below:": "下記のボタンをクリックしてチームへの招待を承認できます",
     "Accept Invitation": "この招待を承認",
     "If you did not expect to receive an invitation to this team, you may discard this email.": "このチームへの招待を受けていない場合には、本メールは破棄してください",
-    "Regards": "よろしくお願い申し上げます"
+    "Regards": "よろしくお願い申し上げます",
+    "of": "件目、全：",
+    "per page": "毎ページ",
+    "results": "件",
+    "to": "から",
+    "Showing": "表示中："
 }
