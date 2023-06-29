@@ -5,8 +5,16 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/askdkc/breezejp/fix-php-code-style-issues.yml?branch=main&label=code%20style)](https://github.com/askdkc/breezejp/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/askdkc/breezejp.svg)](https://packagist.org/packages/askdkc/breezejp)
 
-## もちろん
-Laravel 10に対応してます👍
+## これは何？ TL;DR
+Laravelを下記2コマンドだけで自動で日本語化できちゃうパッケージです👍
+```bash
+composer require askdkc/breezejp --dev
+
+php artisan breezejp
+```
+<br>
+
+<img src="https://user-images.githubusercontent.com/7894265/198011737-c40cedc8-9f5d-4517-8407-93b2844bbeb2.gif" width="600">
 
 ## テーブルオブコンテンツ
 - [はじめに](#はじめに)
@@ -36,7 +44,6 @@ Laravel 10に対応してます👍
 基本的な機能を確認するにはLaravel Breezeをインストールした後にこのパッケージをインストールしてください（以降の使い方の解説がその前提で書かれているため）<br><br>
 動作としてはLaravelの`lang`ディレクトリ配下に日本語化に必要な翻訳ファイルを出力し、config内の言語設定も自動で日本語に変えています🇯🇵<br>
 
-<img src="https://user-images.githubusercontent.com/7894265/198011737-c40cedc8-9f5d-4517-8407-93b2844bbeb2.gif" width="600">
 
 > **翻訳について：**<br>
 > 翻訳内容を修正したい場合には、このREADMEの[日本語のカスタマイズ](#日本語のカスタマイズ)をご確認願います🙇‍♂️
