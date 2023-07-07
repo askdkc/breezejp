@@ -2,7 +2,6 @@
 
 namespace Askdkc\Breezejp\Commands;
 
-use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 
 trait InstallLanguageSwitcher
@@ -45,6 +44,7 @@ trait InstallLanguageSwitcher
         // 実行済みなら実行しない
         if (strpos($contents, '\App\Http\Middleware\Localization::class,') !== false) {
             $this->info('言語切替用の Middleware は既に登録済みです');
+
             return self::SUCCESS;
         }
         // Kernel内の既存の \App\Http\Middleware\VerifyCsrfToken::class の位置を取得
@@ -56,6 +56,7 @@ trait InstallLanguageSwitcher
             file_put_contents($file, $contents);
 
             $this->info('Language Switherのインストールが完了しました!');
+
             return self::SUCCESS;
         }
 
