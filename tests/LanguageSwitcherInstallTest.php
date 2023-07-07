@@ -10,5 +10,5 @@ test('breezejp language switcher command successfully', closure: function () {
 
     $this->assertFileExists(base_path('app/Http/Middleware/Localization.php'));
     $webfile = file_get_contents(base_path('routes/web.php'));
-    $this->assertStringContainsString("// Language Switcher Route 言語切替用ルートだよ", $webfile);
+    $this->assertStringContainsString('// Language Switcher Route 言語切替用ルートだよ', $webfile);
 });

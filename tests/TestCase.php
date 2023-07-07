@@ -18,7 +18,7 @@ class TestCase extends Orchestra
         }
 
         // テスト用のファイル作成(web.php)
-        if (!is_file(__DIR__.'/../vendor/orchestra/testbench-core/laravel/routes/web.php')) {
+        if (! is_file(__DIR__.'/../vendor/orchestra/testbench-core/laravel/routes/web.php')) {
             copy(__DIR__.'/web.php.stub', __DIR__.'/../vendor/orchestra/testbench-core/laravel/routes/web.php');
         }
 
@@ -28,7 +28,7 @@ class TestCase extends Orchestra
         }
 
         // テスト用のファイル作成(Kernel.php)
-        if (!is_file(__DIR__.'/../vendor/orchestra/testbench-core/laravel/app/Http/Kernel.php')) {
+        if (! is_file(__DIR__.'/../vendor/orchestra/testbench-core/laravel/app/Http/Kernel.php')) {
             copy(__DIR__.'/Kernel.php.stub', __DIR__.'/../vendor/orchestra/testbench-core/laravel/app/Http/Kernel.php');
         }
 
