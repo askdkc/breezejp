@@ -31,6 +31,7 @@ php artisan breezejp
   - [mailtrapを使うやり方](#mailtrapを使うやり方)
 - [Laravel Langと何が違うの？](#laravel-langと何が違うの)
 - [おまけ](#おまけ)
+- [言語切り替えサンプルアプリ](#言語の切り替えサンプルアプリ)
 - [変更履歴](#変更履歴)
 - [貢献について](#貢献について)
 - [セキュリティや脆弱性について](#セキュリティや脆弱性について)
@@ -344,6 +345,15 @@ MAIL_FROM_NAME="${APP_NAME}"
 ついでにJetstreamの日本語化もできちゃいます🤫
 
 <img width="640" alt="jetstream" src="https://user-images.githubusercontent.com/7894265/208773006-2feea23e-ca45-4d40-9911-49f03db9ed4d.png">
+
+
+## 言語の切り替えサンプルアプリ
+せっかく日本語に対応したので、例えば元の英語と日本語を切り替えられる方が便利よね？となるかと思います😁
+
+そのためのサンプルアプリ:[Language Switcher Sample (言語切り替えサンプル)](https://github.com/askdkc/laravel-language-switcher)を作成しましたので、ご参考にしてください💓
+
+![251501263-d807d110-971e-44c0-a284-9e1b57c73894](https://github.com/askdkc/breezejp/assets/7894265/d52738c5-c6ae-4f92-87ef-0046f8cff4f7)
+
 
 ## 変更履歴
 
