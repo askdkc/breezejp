@@ -9,8 +9,6 @@ trait InstallLanguageSwitcher
 {
     /**
      * Install the Language Switcher stack.
-     *
-     * @return int|null
      */
     public function installLanguageSwitcher(): int
     {
