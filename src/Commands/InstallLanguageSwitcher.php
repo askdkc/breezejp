@@ -41,7 +41,7 @@ trait InstallLanguageSwitcher
 
         // 実行済みなら実行しない
         if (strpos($contents, '\App\Http\Middleware\Localization::class,') !== false) {
-            $this->info('言語切替用の Middleware は既に登録済みです');
+            $this->info('言語切替用の Middleware は Kernel に既に登録済みです');
 
             return self::SUCCESS;
         }
