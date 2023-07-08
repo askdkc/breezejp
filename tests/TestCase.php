@@ -12,6 +12,26 @@ class TestCase extends Orchestra
     {
         parent::setUp();
 
+        // テスト用のファイルが残ってたら消す(web.php)
+        if (is_file(__DIR__.'/../vendor/orchestra/testbench-core/laravel/routes/web.php')) {
+            unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/routes/web.php');
+        }
+
+        // テスト用のファイル作成(web.php)
+        if (! is_file(__DIR__.'/../vendor/orchestra/testbench-core/laravel/routes/web.php')) {
+            copy(__DIR__.'/web.php.stub', __DIR__.'/../vendor/orchestra/testbench-core/laravel/routes/web.php');
+        }
+
+        // テスト用のファイルが残ってたら消す(Kernel.php)
+        if (is_file(__DIR__.'/../vendor/orchestra/testbench-core/laravel/app/Http/Kernel.php')) {
+            unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/app/Http/Kernel.php');
+        }
+
+        // テスト用のファイル作成(Kernel.php)
+        if (! is_file(__DIR__.'/../vendor/orchestra/testbench-core/laravel/app/Http/Kernel.php')) {
+            copy(__DIR__.'/Kernel.php.stub', __DIR__.'/../vendor/orchestra/testbench-core/laravel/app/Http/Kernel.php');
+        }
+
         Factory::guessFactoryNamesUsing(
             fn (string $modelName) => 'Askdkc\\Breezejp\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
@@ -24,6 +44,10 @@ class TestCase extends Orchestra
             unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/lang/ja/passwords.php');
             unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/lang/ja/validation.php');
             rmdir(__DIR__.'/../vendor/orchestra/testbench-core/laravel/lang/ja');
+        }
+
+        if (is_file(__DIR__.'/../vendor/orchestra/testbench-core/laravel/app/Http/Middleware/Localization.php')) {
+            unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/app/Http/Middleware/Localization.php');
         }
 
         // config/app.phpのlocaleをenに戻す

@@ -7,12 +7,19 @@ use Illuminate\Filesystem\Filesystem;
 
 class BreezejpCommand extends Command
 {
-    public $signature = 'breezejp';
+    use InstallLanguageSwitcher;
+
+    public $signature = 'breezejp {--langswitch : Install Language Switcher 言語切替機能のインストール}';
 
     public $description = 'Add Japanese Translation files for Laravel Breeze';
 
     public function handle(): int
     {
+        // Install Language Switcher 言語切替機能をインストール
+        if ($this->option('langswitch')) {
+            return $this->installLanguageSwitcher();
+        }
+
         $this->info('Laravel Breeze用に日本語翻訳ファイルを準備します');
 
         (new Filesystem)->ensureDirectoryExists(lang_path());
