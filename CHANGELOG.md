@@ -2,6 +2,29 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.7.0 - 2023-07-08
+
+### What's Changed
+
+#### New! 言語切替機能追加🇯🇵🇺🇸
+
+`/language/{locale}` にリクエストを飛ばすだけで言語切り替えが出来る機能を追加しました🎉
+
+下記コマンドでインストール可能です👍
+
+```bash
+php artisan breezejp --langswitch
+
+```
+##### 細かい変更点一覧
+
+- Fix ReadMe and add TLDR by @askdkc in https://github.com/askdkc/breezejp/pull/92
+- Bump dependabot/fetch-metadata from 1.5.1 to 1.6.0 by @dependabot in https://github.com/askdkc/breezejp/pull/93
+- Add Language Switch Sample App Section by @askdkc in https://github.com/askdkc/breezejp/pull/94
+- Add Language Switcher / 言語切替機能追加 by @askdkc in https://github.com/askdkc/breezejp/pull/95
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.6.4...v1.7.0
+
 ## v1.6.4 - 2023-06-26
 
 ### What's Changed
