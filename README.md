@@ -16,6 +16,10 @@ php artisan breezejp
 
 <img src="https://user-images.githubusercontent.com/7894265/198011737-c40cedc8-9f5d-4517-8407-93b2844bbeb2.gif" width="600">
 
+<hr size="1" width="620">
+
+<img src="https://github.com/askdkc/breezejp/assets/7894265/d52738c5-c6ae-4f92-87ef-0046f8cff4f7" width="600">
+
 ## テーブルオブコンテンツ
 - [はじめに](#はじめに)
 - [使い方](#使い方)
