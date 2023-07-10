@@ -15,7 +15,12 @@ php artisan breezejp
 <br>
 
 <img src="https://user-images.githubusercontent.com/7894265/198011737-c40cedc8-9f5d-4517-8407-93b2844bbeb2.gif" width="600">
+<br>
 
+また、下記1コマンドだけで言語切替機能も追加できます👍
+```bash
+php artisan breezejp --langswitch
+```
 <br>
 
 <img src="https://github.com/askdkc/breezejp/assets/7894265/d52738c5-c6ae-4f92-87ef-0046f8cff4f7" width="600">
