@@ -1,6 +1,6 @@
 {
     "name": "askdkc/breezejp",
-    "description": "Laravel Breeze(とLaravel UIとJetstream)を標準の各種バリデーションや言語設定、タイムスタンプも含めて一瞬で日本語化対応 / This package provides Japanese translation for Laravel Breeze, Laravel UI and Jetstream package. It also privides Japanese validation messages",
+    "description": "Laravel Breeze(とLaravel UIとJetstream)を標準の各種バリデーションや言語設定、タイムスタンプも含めて一瞬で日本語化対応＆言語切替機能も追加 / This package provides Japanese translation for Laravel Breeze, Laravel UI and Jetstream package with language switching feature. It also privides Japanese validation messages",
     "keywords": [
         "breeze",
         "laravel",
