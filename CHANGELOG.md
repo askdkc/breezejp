@@ -2,6 +2,19 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.7.1 - 2023-09-03
+
+### What's Changed
+
+#### PHP 8.3をサポート🎉
+
+- Update TL;DR by @askdkc in https://github.com/askdkc/breezejp/pull/98
+- Update composer.json by @askdkc in https://github.com/askdkc/breezejp/pull/97
+- add sponsorship button by @askdkc in https://github.com/askdkc/breezejp/pull/99
+- Support PHP 8.3 by @askdkc in https://github.com/askdkc/breezejp/pull/100
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.7.0...v1.7.1
+
 ## v1.7.0 - 2023-07-08
 
 ### What's Changed
@@ -14,6 +27,7 @@ All notable changes to `breezejp` will be documented in this file.
 
 ```bash
 php artisan breezejp --langswitch
+
 
 ```
 ##### 細かい変更点一覧
