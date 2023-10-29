@@ -159,7 +159,7 @@ http://localhost:8000/ にアクセス
 <img width="1328" alt="image" src="https://user-images.githubusercontent.com/7894265/202038869-b1f6a9e0-fcf5-4618-b036-6f7d263a8742.png">
 <br>
 
-- この Breezejp v1.64からページネーションの日本語化にも対応しました
+- Breezejp v1.64からページネーションの日本語化にも対応しました
 <br>
 <img width="1066" alt="pagination" src="https://github.com/askdkc/breezejp/assets/7894265/7c86fb75-fcb2-4091-81e9-e5ac60fbfff9">
 <br>
@@ -395,7 +395,7 @@ http://127.0.0.1:8000/language/ja
 - 英語に切り替える例
 
 ```
-http://127.0.0.1:8000/language/ja
+http://127.0.0.1:8000/language/en
 ```
 
 これでLaravel Breezeの各種メニューの言語が切り替わるのが確認できると思います🤯
