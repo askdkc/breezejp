@@ -2,6 +2,17 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.7.2 - 2023-11-20
+
+### What's Changed
+
+- Bump actions/checkout from 3 to 4 by @dependabot in https://github.com/askdkc/breezejp/pull/102
+- Bump stefanzweifel/git-auto-commit-action from 4 to 5 by @dependabot in https://github.com/askdkc/breezejp/pull/103
+- Update README.md by @askdkc in https://github.com/askdkc/breezejp/pull/104
+- Add translations for present related validation by @askdkc in https://github.com/askdkc/breezejp/pull/105
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.7.1...v1.7.2
+
 ## v1.7.1 - 2023-09-03
 
 ### What's Changed
@@ -27,6 +38,7 @@ All notable changes to `breezejp` will be documented in this file.
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 ```
