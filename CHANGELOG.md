@@ -2,6 +2,16 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.7.3 - 2023-11-24
+
+### What's Changed
+
+- Add translations for file extensions and hex color by @nshiro in https://github.com/askdkc/breezejp/pull/107 <br> (these validations have been added by https://github.com/laravel/framework/pull/49056 and https://github.com/laravel/framework/pull/49082)
+
+Thank You @nshiro san!!
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.7.2...v1.7.3
+
 ## v1.7.2 - 2023-11-20
 
 ### What's Changed
@@ -38,6 +48,7 @@ All notable changes to `breezejp` will be documented in this file.
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
