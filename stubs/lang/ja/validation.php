@@ -43,6 +43,7 @@ return [
     'ends_with' => ':attributeには、:valuesのどれかで終わる値を指定してください。',
     'enum' => '選択された:attributeは正しくありません。',
     'exists' => '選択された:attributeは正しくありません。',
+    'extensions' => ':attributeは、:valuesの拡張子を指定してください。',
     'file' => ':attributeにはファイルを指定してください。',
     'filled' => ':attributeに値を指定してください。',
     'gt' => [
@@ -57,6 +58,7 @@ return [
         'string' => ':attributeは、:value文字以上で指定してください。',
         'array' => ':attributeには、:value個以上のアイテムを指定してください。',
     ],
+    'hex_color' => ':attributeには、有効な16進数の色を指定してください。',
     'image' => ':attributeには画像ファイルを指定してください。',
     'in' => '選択された:attributeは正しくありません。',
     'in_array' => ':attributeには:otherの値を指定してください。',
