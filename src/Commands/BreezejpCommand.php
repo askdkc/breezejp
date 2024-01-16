@@ -25,7 +25,7 @@ class BreezejpCommand extends Command
         (new Filesystem)->ensureDirectoryExists(lang_path());
         (new Filesystem)->copyDirectory(__DIR__.'/../../stubs/lang/', lang_path());
 
-        if (file_exists(base_path("config/app.php"))) {
+        if (file_exists(base_path('config/app.php'))) {
             $this->info('config/app.phpのlocaleをjaにします');
             // Read the contents of the file into a string
             $configfile = file_get_contents(base_path('config/app.php'));
@@ -60,36 +60,34 @@ class BreezejpCommand extends Command
 
         }
 
-
         // For Laravel 11 and above
         $this->info('.envのlocaleをjaにします');
-            // Read the contents of the file into a string
-            $configfile = file_get_contents(base_path('.env'));
+        // Read the contents of the file into a string
+        $configfile = file_get_contents(base_path('.env'));
 
-            // Modify the contents of the string
-            $configfile = str_replace("'locale' => 'en'", "'locale' => 'ja'", $configfile);
-            $configfile = str_replace("'faker_locale' => 'en_US'", "'faker_locale' => 'ja_JP'", $configfile);
-            $configfile = str_replace("'timezone' => 'UTC'", "'timezone' => 'Asia/Tokyo'", $configfile);
+        // Modify the contents of the string
+        $configfile = str_replace("'locale' => 'en'", "'locale' => 'ja'", $configfile);
+        $configfile = str_replace("'faker_locale' => 'en_US'", "'faker_locale' => 'ja_JP'", $configfile);
+        $configfile = str_replace("'timezone' => 'UTC'", "'timezone' => 'Asia/Tokyo'", $configfile);
 
-            // Save the modified contents back to the file
-            file_put_contents(base_path('.env'), $configfile);
+        // Save the modified contents back to the file
+        file_put_contents(base_path('.env'), $configfile);
 
-            if ($this->confirm('GitHubリポジトリにスターの御協力をお願いします🙏', true)) {
-                $repoUrl = 'https://github.com/askdkc/breezejp';
+        if ($this->confirm('GitHubリポジトリにスターの御協力をお願いします🙏', true)) {
+            $repoUrl = 'https://github.com/askdkc/breezejp';
 
-                if (PHP_OS_FAMILY == 'Darwin') {
-                    exec("open {$repoUrl}");
-                }
-                if (PHP_OS_FAMILY == 'Windows') {
-                    exec("start {$repoUrl}");
-                }
-                if (PHP_OS_FAMILY == 'Linux') {
-                    exec("xdg-open {$repoUrl}");
-                }
-
-                $this->line('Thank you! / ありがとう💓');
+            if (PHP_OS_FAMILY == 'Darwin') {
+                exec("open {$repoUrl}");
+            }
+            if (PHP_OS_FAMILY == 'Windows') {
+                exec("start {$repoUrl}");
+            }
+            if (PHP_OS_FAMILY == 'Linux') {
+                exec("xdg-open {$repoUrl}");
             }
 
-        
+            $this->line('Thank you! / ありがとう💓');
+        }
+
     }
 }
