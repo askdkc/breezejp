@@ -12,6 +12,8 @@ class TestCase extends Orchestra
     {
         parent::setUp();
 
+        copy (__DIR__.'/../vendor/orchestra/testbench-core/laravel/.env.example', __DIR__.'/../vendor/orchestra/testbench-core/laravel/.env');
+
         // テスト用のファイルが残ってたら消す(web.php)
         if (is_file(__DIR__.'/../vendor/orchestra/testbench-core/laravel/routes/web.php')) {
             unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/routes/web.php');

@@ -65,9 +65,5 @@ jobs:
       - name: List Installed Dependencies
         run: composer show -D
 
-      - name: Laravel Setup
-        run: |
-          cp .env.test .env
-
       - name: Execute tests
         run: vendor/bin/pest --ci
