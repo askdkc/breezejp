@@ -1,5 +1,9 @@
 <?php
 
+test('.env file exists', function () {
+    $this->assertFileExists(base_path('.env'));
+});
+
 test('breezejp command successfully run and see all the published files', closure: function () {
     $this->artisan('breezejp')
         ->expectsOutput('Laravel Breeze用に日本語翻訳ファイルを準備します')
