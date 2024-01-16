@@ -61,14 +61,14 @@ class BreezejpCommand extends Command
         }
 
         // For Laravel 11 and above
-        $this->info('.envのlocaleをjaにします');
+        $this->info('.envのAPP_LOCALEやTAPP_IMEZONEを日本にします');
         // Read the contents of the file into a string
         $configfile = file_get_contents(base_path('.env'));
 
         // Modify the contents of the string
-        $configfile = str_replace("'locale' => 'en'", "'locale' => 'ja'", $configfile);
-        $configfile = str_replace("'faker_locale' => 'en_US'", "'faker_locale' => 'ja_JP'", $configfile);
-        $configfile = str_replace("'timezone' => 'UTC'", "'timezone' => 'Asia/Tokyo'", $configfile);
+        $configfile = str_replace("APP_LOCALE=en", "APP_LOCALE=ja", $configfile);
+        $configfile = str_replace("APP_FAKER_LOCALE=en", "APP_FAKER_LOCALE=ja_JP", $configfile);
+        $configfile = str_replace("APP_TIMEZONE=UTC", "APP_TIMEZONE=Asia/Tokyo", $configfile);
 
         // Save the modified contents back to the file
         file_put_contents(base_path('.env'), $configfile);
