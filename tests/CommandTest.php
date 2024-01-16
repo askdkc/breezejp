@@ -21,7 +21,7 @@ test('breezejp command successfully update config/app.php locale to ja', functio
         ->expectsOutput('日本語ファイルのインストールが完了しました!')
         ->assertExitCode(0);
 
-    if (file_exists(base_path("config/app.php"))) {
+    if (file_exists(base_path('config/app.php'))) {
         $configfile = file_get_contents(base_path('config/app.php'));
         $this->assertStringContainsString("'locale' => 'ja'", $configfile);
         $this->assertStringContainsString("'faker_locale' => 'ja_JP'", $configfile);
@@ -41,7 +41,7 @@ test('breezejp command successfully update config/app.php timezone to Asia/Tokyo
         ->expectsOutput('日本語ファイルのインストールが完了しました!')
         ->assertExitCode(0);
 
-    if (file_exists(base_path("config/app.php"))) {
+    if (file_exists(base_path('config/app.php'))) {
         $configfile = file_get_contents(base_path('config/app.php'));
         $this->assertStringContainsString("'timezone' => 'Asia/Tokyo'", $configfile);
     } else { // For Laravel 11 and above
