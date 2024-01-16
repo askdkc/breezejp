@@ -21,7 +21,7 @@ test('breezejp command successfully update config/app.php locale to ja', functio
         ->expectsOutput('日本語ファイルのインストールが完了しました!')
         ->assertExitCode(0);
 
-    if (11 <= (int) substr(Illuminate\Foundation\Application::VERSION, 0, 2)) {
+    if (11 > (int) substr(Illuminate\Foundation\Application::VERSION, 0, 2)) {
         $configfile = file_get_contents(base_path('config/app.php'));
         $this->assertStringContainsString("'locale' => 'ja'", $configfile);
         $this->assertStringContainsString("'faker_locale' => 'ja_JP'", $configfile);
