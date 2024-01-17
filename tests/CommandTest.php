@@ -2,6 +2,7 @@
 
 test('.env file exists', function () {
     $this->assertFileExists(base_path('.env'));
+    var_dump(file_get_contents(base_path(".env")));
 });
 
 test('breezejp command successfully run and see all the published files', closure: function () {
@@ -32,7 +33,6 @@ test('breezejp command successfully update config/app.php locale to ja', functio
         $this->assertStringContainsString("'timezone' => 'Asia/Tokyo'", $configfile);
     } else { // For Laravel 11 and above
         $configfile = file_get_contents(base_path('.env'));
-        dump($configfile);
         $this->assertStringContainsString('APP_LOCALE=ja', $configfile);
         $this->assertStringContainsString('APP_FAKER_LOCALE=ja_JP', $configfile);
         $this->assertStringContainsString('APP_TIMEZONE=Asia/Tokyo', $configfile);
