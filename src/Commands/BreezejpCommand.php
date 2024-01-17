@@ -70,6 +70,8 @@ class BreezejpCommand extends Command
         $configfile = str_replace('APP_FAKER_LOCALE=en', 'APP_FAKER_LOCALE=ja_JP', $configfile);
         $configfile = str_replace('APP_TIMEZONE=UTC', 'APP_TIMEZONE=Asia/Tokyo', $configfile);
 
+        var_dump($configfile);
+
         // Save the modified contents back to the file
         file_put_contents(base_path('.env'), $configfile);
 
@@ -88,6 +90,10 @@ class BreezejpCommand extends Command
 
             $this->line('Thank you! / ありがとう💓');
         }
+
+        $this->info('日本語ファイルのインストールが完了しました!');
+
+            return self::SUCCESS;
 
     }
 }
