@@ -25,7 +25,9 @@ class BreezejpCommand extends Command
         (new Filesystem)->ensureDirectoryExists(lang_path());
         (new Filesystem)->copyDirectory(__DIR__.'/../../stubs/lang/', lang_path());
 
-        if (file_exists(base_path('config/app.php'))) {
+        $envfile = file_get_contents(base_path('.env'));
+
+        if (strpos($envfile, "APP_FAKER_LOCALE") == false) {
             $this->info('config/app.phpのlocaleをjaにします');
             // Read the contents of the file into a string
             $configfile = file_get_contents(base_path('config/app.php'));
@@ -69,8 +71,6 @@ class BreezejpCommand extends Command
         $configfile = str_replace('APP_LOCALE=en', 'APP_LOCALE=ja', $configfile);
         $configfile = str_replace('APP_FAKER_LOCALE=en_US', 'APP_FAKER_LOCALE=ja_JP', $configfile);
         $configfile = str_replace('APP_TIMEZONE=UTC', 'APP_TIMEZONE=Asia/Tokyo', $configfile);
-
-        var_dump($configfile);
 
         // Save the modified contents back to the file
         file_put_contents(base_path('.env'), $configfile);

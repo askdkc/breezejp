@@ -2,7 +2,6 @@
 
 test('.env file exists', function () {
     $this->assertFileExists(base_path('.env'));
-    var_dump(file_get_contents(base_path('.env')));
 });
 
 test('breezejp command successfully run and see all the published files', closure: function () {
