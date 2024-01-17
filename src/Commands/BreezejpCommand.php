@@ -27,7 +27,7 @@ class BreezejpCommand extends Command
 
         $envfile = file_get_contents(base_path('.env'));
 
-        if (strpos($envfile, "APP_FAKER_LOCALE") == false) {
+        if (strpos($envfile, 'APP_FAKER_LOCALE') == false) {
             $this->info('config/app.phpのlocaleをjaにします');
             // Read the contents of the file into a string
             $configfile = file_get_contents(base_path('config/app.php'));
