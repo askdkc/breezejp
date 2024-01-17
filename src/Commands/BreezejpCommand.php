@@ -93,7 +93,7 @@ class BreezejpCommand extends Command
 
         $this->info('日本語ファイルのインストールが完了しました!');
 
-            return self::SUCCESS;
+        return self::SUCCESS;
 
     }
 }
