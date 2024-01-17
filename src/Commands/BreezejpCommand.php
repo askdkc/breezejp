@@ -67,7 +67,7 @@ class BreezejpCommand extends Command
 
         // Modify the contents of the string
         $configfile = str_replace('APP_LOCALE=en', 'APP_LOCALE=ja', $configfile);
-        $configfile = str_replace('APP_FAKER_LOCALE=en', 'APP_FAKER_LOCALE=ja_JP', $configfile);
+        $configfile = str_replace('APP_FAKER_LOCALE=en_US', 'APP_FAKER_LOCALE=ja_JP', $configfile);
         $configfile = str_replace('APP_TIMEZONE=UTC', 'APP_TIMEZONE=Asia/Tokyo', $configfile);
 
         var_dump($configfile);
