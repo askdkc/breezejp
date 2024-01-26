@@ -2,6 +2,17 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.8.0 - 2024-01-26
+
+### What's Changed
+
+#### Laravel 11に対応🎉
+
+* Bump aglipanci/laravel-pint-action from 2.3.0 to 2.3.1 by @dependabot in https://github.com/askdkc/breezejp/pull/109
+* Support Laravel 11 by @askdkc in https://github.com/askdkc/breezejp/pull/112
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.7.3...v1.8.0
+
 ## v1.7.3 - 2023-11-24
 
 ### What's Changed
@@ -48,6 +59,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
