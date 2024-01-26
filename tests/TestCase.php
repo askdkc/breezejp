@@ -12,6 +12,8 @@ class TestCase extends Orchestra
     {
         parent::setUp();
 
+        copy(__DIR__.'/../vendor/orchestra/testbench-core/laravel/.env.example', __DIR__.'/../vendor/orchestra/testbench-core/laravel/.env');
+
         // テスト用のファイルが残ってたら消す(web.php)
         if (is_file(__DIR__.'/../vendor/orchestra/testbench-core/laravel/routes/web.php')) {
             unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/routes/web.php');
@@ -54,6 +56,17 @@ class TestCase extends Orchestra
         $configfile = file_get_contents(__DIR__.'/../vendor/orchestra/testbench-core/laravel/config/app.php');
         $configfile = str_replace("'locale' => 'ja'", "'locale' => 'en'", $configfile);
         file_put_contents(__DIR__.'/../vendor/orchestra/testbench-core/laravel/config/app.php', $configfile);
+    }
+
+    protected function tearDown(): void
+    {
+        parent::tearDown();
+
+        // テスト用のファイルが残ってたら消す(.env)
+        if (is_file(__DIR__.'/../vendor/orchestra/testbench-core/laravel/.env')) {
+            unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/.env');
+        }
+
     }
 
     protected function getPackageProviders($app)

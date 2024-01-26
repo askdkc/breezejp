@@ -21,16 +21,16 @@
     "require": {
         "php": "^8.0",
         "spatie/laravel-package-tools": "^1.14.0",
-        "illuminate/contracts": "^9.28|^10.0"
+        "illuminate/contracts": "^9.28|^10.0|^11.0"
     },
     "require-dev": {
         "laravel/pint": "^1.4",
-        "nunomaduro/collision": "^6.0|^7.0",
-        "nunomaduro/larastan": "^2.0",
-        "orchestra/testbench": "^7.7|^8.0",
-        "pestphp/pest": "^1.22|^2.0",
+        "nunomaduro/collision": "^6.0|^7.0|^8.0",
+        "larastan/larastan": "^2.0",
+        "orchestra/testbench": "^7.7|^8.0|^9.0",
+        "pestphp/pest": "^1.22|^2.0|^3.0",
         "phpstan/extension-installer": "^1.2",
-        "phpunit/phpunit": "^9.5.27|^10.0"
+        "phpunit/phpunit": "^9.5.27|^10.0|^11.0"
     },
     "autoload": {
         "psr-4": {
