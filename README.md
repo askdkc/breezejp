@@ -222,7 +222,7 @@ MAIL_FROM_ADDRESS="hello@example.com"
 MAIL_FROM_NAME="${APP_NAME}"
 ```
 
-- macOSの場合は[Homebrew](https://brew.sh)をお使いだと思うので、brewでmailtapを入れます(まだ入れてないなら)
+- macOSの場合は[Homebrew](https://brew.sh)をお使いだと思うので、brewでmailpitを入れます(まだ入れてないなら)
 
 ```bash
 brew tap axllent/apps
