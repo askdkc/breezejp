@@ -67,6 +67,7 @@ return [
     'ipv4' => ':attributeには、有効なIPv4アドレスを指定してください。',
     'ipv6' => ':attributeには、有効なIPv6アドレスを指定してください。',
     'json' => ':attributeには、有効なJSON文字列を指定してください。',
+    'list' => ':attributeには、一覧を指定してください。',
     'lowercase' => ':attributeは、小文字のみで指定してください。',
     'lt' => [
         'numeric' => ':attributeには、:valueより小さな値を指定してください。',
