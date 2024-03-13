@@ -2,6 +2,21 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.8.1 - 2024-03-13
+
+### What's Changed
+
+#### Laravel 11から追加された `list` エラーメッセージの翻訳が追加されました
+
+ありがとう @nshiro さん💕
+
+* Bump nick-fields/retry from 2 to 3 by @dependabot in https://github.com/askdkc/breezejp/pull/114
+* fix typo by @askdkc in https://github.com/askdkc/breezejp/pull/115
+* Bump ramsey/composer-install from 2 to 3 by @dependabot in https://github.com/askdkc/breezejp/pull/116
+* Add `list` error message by @nshiro in https://github.com/askdkc/breezejp/pull/117
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.8.0...v1.8.1
+
 ## v1.8.0 - 2024-01-26
 
 ### What's Changed
@@ -59,6 +74,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
