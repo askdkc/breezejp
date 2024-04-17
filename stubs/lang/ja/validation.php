@@ -128,6 +128,7 @@ return [
     'required_array_keys' => ':attributeは、:valuesの項目を含めてください。',
     'required_if' => ':otherが:valueの場合、:attributeも指定してください。',
     'required_if_accepted' => ':attributeは、:otherが承認された場合は、必ず指定してください。',
+    'required_if_declined' => ':attributeは、:otherが拒否された場合は、必ず指定してください。',
     'required_unless' => ':otherが:valuesでない場合、:attributeを指定してください。',
     'required_with' => ':valuesを指定する場合は、:attributeも指定してください。',
     'required_with_all' => ':valuesを指定する場合は、:attributeも指定してください。',
