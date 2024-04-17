@@ -2,6 +2,20 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.8.2 - 2024-04-17
+
+### What's Changed
+
+#### 新規に追加されたRequiredIfDeclinedバリデーションに対応しました
+
+@nshiro さん いつもありがとうございます💕
+
+* Bump dependabot/fetch-metadata from 1.6.0 to 2.0.0 by @dependabot in https://github.com/askdkc/breezejp/pull/119
+* Bump aglipanci/laravel-pint-action from 2.3.1 to 2.4 by @dependabot in https://github.com/askdkc/breezejp/pull/120
+* Add required_if_declined error message by @nshiro in https://github.com/askdkc/breezejp/pull/121
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.8.1...v1.8.2
+
 ## v1.8.1 - 2024-03-13
 
 ### What's Changed
@@ -74,6 +88,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
