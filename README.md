@@ -74,8 +74,11 @@ php artisan breezejp --langswitch
 composer require laravel/breeze --dev
 
 php artisan breeze:install blade --dark
+```
 
 (もしダークモードが不要な人は👇のように末尾の --darkオプション無しで実行してね)
+
+```bash
 php artisan breeze:install blade
 
 php artisan migrate
@@ -93,8 +96,11 @@ composer require askdkc/breezejp --dev
 
 ```bash
 php artisan breezejp
+```
 
 出力内容：
+
+```bash
 Laravel Breeze用に日本語翻訳ファイルを準備します
 config/app.phpのlocaleをjaにします
 
@@ -113,34 +119,35 @@ Breezejpは`php artisan breezejp`コマンド実行時にLaravelの設定ファ�
 
 具体的にはインストール時に自動でこうなりますので、特に何もしないでもOK👀✨💓
 
+---`config/app.php`:インストール前---
 ```vim
----config/app.php:インストール前---
 'timezone' => 'UTC',
 
 'locale' => 'en',
 
 'faker_locale' => 'en_US',
---------------------------------
+```
 
 ↓ `php artisan breezejp` の実行後
 
----config/app.php:インストール後---
+---`config/app.php`:インストール後---
+```vim
 'timezone' => 'Asia/Tokyo',
 
 'locale' => 'ja',
 
 'faker_locale' => 'ja_JP',
---------------------------------
 ```
 
 ### 動作確認
 LaravelにアクセスするとBreezeの各メニューやバリデーションメッセージが日本語化されています
 
-```php
+Laravelを起動して
+```bash
 php artsan serve
-
-http://localhost:8000/ にアクセス
 ```
+
+[http://localhost:8000/](http://localhost:8000/) にアクセス
 
 - ユーザ登録画面
 <img width="1062" alt="image" src="https://user-images.githubusercontent.com/7894265/197683533-194da23f-01e1-4f76-a2ec-3ee6412e3c93.png">
