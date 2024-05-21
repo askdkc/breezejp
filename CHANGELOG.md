@@ -2,6 +2,24 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v1.8.3 - 2024-05-21
+
+### What's Changed
+
+#### 新たに追加された`contains`のバリデーション翻訳に対応しました
+
+いつもPRありがとうございます！ @nshiro さん💕
+
+* Bump dependabot/fetch-metadata from 2.0.0 to 2.1.0 by @dependabot in https://github.com/askdkc/breezejp/pull/123
+* Update README by @macocci7 in https://github.com/askdkc/breezejp/pull/124
+* Add 'contains' validation error message in Japanese translation by @nshiro in https://github.com/askdkc/breezejp/pull/125
+
+### New Contributors
+
+* @macocci7 made their first contribution in https://github.com/askdkc/breezejp/pull/124
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.8.2...v1.8.3
+
 ## v1.8.2 - 2024-04-17
 
 ### What's Changed
@@ -88,6 +106,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
