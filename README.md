@@ -15,6 +15,12 @@ composer require askdkc/breezejp --dev
 
 php artisan breezejp
 ```
+
+> **メモ：Laravel Sail(Docker)を使って開発している人は下記コマンドになります**
+> ```bash
+> ./vendor/bin/sail composer require askdkc/breezejp --dev
+> 
+> ./vendor/bin/sail artisan breezejp
 <br>
 
 <img src="https://user-images.githubusercontent.com/7894265/198011737-c40cedc8-9f5d-4517-8407-93b2844bbeb2.gif" width="600">
@@ -24,6 +30,9 @@ php artisan breezejp
 ```bash
 php artisan breezejp --langswitch
 ```
+> **メモ：Sailの場合**
+> ```bash
+> ./vendor/bin/sail artisan breezejp --langswitch
 <br>
 
 <img src="https://github.com/askdkc/breezejp/assets/7894265/d52738c5-c6ae-4f92-87ef-0046f8cff4f7" width="600">
