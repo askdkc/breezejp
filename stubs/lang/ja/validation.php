@@ -122,6 +122,8 @@ return [
     'present_with_all' => ':attributeは:valuesがある場合に必須です。',
     'prohibited' => ':attributeは入力禁止です。',
     'prohibited_if' => ':otherが:valueの場合、:attributeは入力禁止です。',
+    'prohibited_if_accepted' => ':attributeは、:otherが承認された場合は、入力禁止です。',
+    'prohibited_if_declined' => ':attributeは、:otherが拒否された場合は、入力禁止です。',
     'prohibited_unless' => ':otherが:valueでない場合、:attributeは入力禁止です。',
     'prohibits' => 'attributeは:otherの入力を禁じています。',
     'regex' => ':attributeに正しい形式を指定してください。',
