@@ -2,6 +2,4 @@
 
 namespace Askdkc\Breezejp;
 
-class Breezejp
-{
-}
+class Breezejp {}
