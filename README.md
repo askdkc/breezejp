@@ -6,8 +6,6 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/askdkc/breezejp.svg)](https://packagist.org/packages/askdkc/breezejp)
 [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/askdkc)
 
-## PHP 8.4 にも対応済みです（2024-10-18）
-
 ## これは何？ TL;DR
 Laravelを下記2コマンドだけで自動で日本語化できちゃうパッケージです👍
 ```bash
@@ -122,30 +120,30 @@ config/app.phpのlocaleをjaにします
 ```
 
 ### Laravelの言語設定やタイムゾーン設定が自動で行われます
-Breezejpは`php artisan breezejp`コマンド実行時にLaravelの設定ファイル`config/app.php`のlocaleを自動でenからjaに変更します👍
+Breezejpは`php artisan breezejp`コマンド実行時にLaravelの設定ファイル`.env`のlocaleを自動でenからjaに変更します👍
 
 ついでにTimezoneの設定も日本向けに直します🕛
 
 具体的にはインストール時に自動でこうなりますので、特に何もしないでもOK👀✨💓
 
----`config/app.php`:インストール前---
+---`.env`:インストール前---
 ```vim
-'timezone' => 'UTC',
+'APP_TIMEZONE=UTC'
 
-'locale' => 'en',
+'APP_LOCALE=en'
 
-'faker_locale' => 'en_US',
+'APP_FAKER_LOCALE=en_US'
 ```
 
 ↓ `php artisan breezejp` の実行後
 
 ---`config/app.php`:インストール後---
 ```vim
-'timezone' => 'Asia/Tokyo',
+'APP_TIMEZONE=Asia/Tokyo'
 
-'locale' => 'ja',
+'APP_LOCALE=ja'
 
-'faker_locale' => 'ja_JP',
+'APP_FAKER_LOCALE=ja_JP'
 ```
 
 ### 動作確認
