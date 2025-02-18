@@ -2,6 +2,22 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v2.0.0 - 2025-02-18
+
+### What's Changed
+
+#### "End support for Laravel 10 and earlier.
+
+* Bump dependabot/fetch-metadata from 2.1.0 to 2.2.0 by @dependabot in https://github.com/askdkc/breezejp/pull/127
+* Add Sail command in ReadMe by @askdkc in https://github.com/askdkc/breezejp/pull/128
+* Add php 8.4 support by @askdkc in https://github.com/askdkc/breezejp/pull/130
+* Bump dependabot/fetch-metadata from 2.2.0 to 2.3.0 by @dependabot in https://github.com/askdkc/breezejp/pull/131
+* Bump aglipanci/laravel-pint-action from 2.4 to 2.5 by @dependabot in https://github.com/askdkc/breezejp/pull/132
+* Add prohibited_if_xxx error messages by @nshiro in https://github.com/askdkc/breezejp/pull/133
+* Version 2 by @askdkc in https://github.com/askdkc/breezejp/pull/134
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v1.8.3...v2.0.0
+
 ## v1.8.3 - 2024-05-21
 
 ### What's Changed
@@ -106,6 +122,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
