@@ -34,7 +34,7 @@ test('breezejp command successfully update env or config/app.php locale to ja', 
         $envfile = file_get_contents(base_path('.env'));
         // For Stupid Laravel 11 Breaking Changes
         $configfile = file_get_contents(base_path('config/app.php'));
-        if (!strpos($configfile, "'timezone' => env")) {
+        if (! strpos($configfile, "'timezone' => env")) {
             $this->assertStringContainsString('APP_LOCALE=ja', $envfile);
             $this->assertStringContainsString('APP_FAKER_LOCALE=ja_JP', $envfile);
             $this->assertStringContainsString("'timezone' => 'Asia/Tokyo'", $configfile);
@@ -43,7 +43,7 @@ test('breezejp command successfully update env or config/app.php locale to ja', 
             $this->assertStringContainsString('APP_FAKER_LOCALE=ja_JP', $envfile);
             $this->assertStringContainsString('APP_TIMEZONE=Asia/Tokyo', $envfile);
         }
-        
+
     }
 });
 
@@ -60,7 +60,7 @@ test('breezejp command successfully update env or config/app.php timezone to Asi
     } else { // For Laravel 11 and above
         $configfile = file_get_contents(base_path('config/app.php'));
         // For Stupid Laravel 11 Breaking Changes
-        if (!strpos($configfile, "'timezone' => env")) {
+        if (! strpos($configfile, "'timezone' => env")) {
             $this->assertStringContainsString("'timezone' => 'Asia/Tokyo'", $configfile);
         } else {
             $envfile = file_get_contents(base_path('.env'));

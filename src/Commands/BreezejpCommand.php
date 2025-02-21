@@ -64,7 +64,7 @@ class BreezejpCommand extends Command
 
         // Message switch before Laravel 11.6.2 and after
         strpos($envfile, 'APP_TIMEZONE=UTC') ? $this->info('.envのAPP_LOCALEやAPP_TIMEZONEを日本にします') : $this->info('.envのAPP_LOCALEやAPP_FAKER_LOCALEを日本語にします');
-        
+
         // Read the contents of the file into a string
 
         // Modify the contents of the string
