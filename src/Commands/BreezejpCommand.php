@@ -62,18 +62,26 @@ class BreezejpCommand extends Command
 
         }
 
-        // For Laravel 11 and above
-        $this->info('.envのAPP_LOCALEやAPP_TIMEZONEを日本にします');
+        // Message switch before Laravel 11.6.2 and after
+        strpos($envfile, 'APP_TIMEZONE=UTC') ? $this->info('.envのAPP_LOCALEやAPP_TIMEZONEを日本にします') : $this->info('.envのAPP_LOCALEやAPP_FAKER_LOCALEを日本語にします');
+
         // Read the contents of the file into a string
-        $configfile = file_get_contents(base_path('.env'));
 
         // Modify the contents of the string
-        $configfile = str_replace('APP_LOCALE=en', 'APP_LOCALE=ja', $configfile);
-        $configfile = str_replace('APP_FAKER_LOCALE=en_US', 'APP_FAKER_LOCALE=ja_JP', $configfile);
-        $configfile = str_replace('APP_TIMEZONE=UTC', 'APP_TIMEZONE=Asia/Tokyo', $configfile);
-
+        $envfile = str_replace('APP_LOCALE=en', 'APP_LOCALE=ja', $envfile);
+        $envfile = str_replace('APP_FAKER_LOCALE=en_US', 'APP_FAKER_LOCALE=ja_JP', $envfile);
+        $envfile = str_replace('APP_TIMEZONE=UTC', 'APP_TIMEZONE=Asia/Tokyo', $envfile);
         // Save the modified contents back to the file
-        file_put_contents(base_path('.env'), $configfile);
+        file_put_contents(base_path('.env'), $envfile);
+
+        $configfile = file_get_contents(base_path('config/app.php'));
+        if (strpos($configfile, "'timezone' => 'UTC'")) {
+            $this->info('config/app.phpのtimezoneをAsia/Tokyoにします');
+            // Modify the contents of the string
+            $configfile = str_replace("'timezone' => 'UTC'", "'timezone' => 'Asia/Tokyo'", $configfile);
+            // Save the modified contents back to the file
+            file_put_contents(base_path('config/app.php'), $configfile);
+        }
 
         if ($this->confirm('GitHubリポジトリにスターの御協力をお願いします🙏', true)) {
             $repoUrl = 'https://github.com/askdkc/breezejp';
