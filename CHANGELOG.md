@@ -2,6 +2,20 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v2.1.0 - 2025-02-21
+
+### What's Changed
+
+#### Laravel 11の急な環境設定方法の変更に対応
+
+https://github.com/laravel/laravel/pull/6536 による変更で`.env`に記載していた`APP_TIMEZONE`を廃止し、旧式の`config/app.php`の`'timezone'`に変更となった
+
+* Fix for Laravel 11 Breaking Change by @askdkc in https://github.com/askdkc/breezejp/pull/137
+
+### メジャーバージョンならいざ知らず、マイナーバージョンでこうした変更入れるの勘弁して〜😵
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v2.0.0...v2.1.0
+
 ## v2.0.0 - 2025-02-18
 
 ### What's Changed
@@ -122,6 +136,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
