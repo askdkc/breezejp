@@ -10,5 +10,4 @@ parameters:
     #Currently off for Laravel 10 support
     #checkOctaneCompatibility: true
     #checkModelProperties: true
-    checkMissingIterableValueType: false
 
