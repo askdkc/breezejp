@@ -20,7 +20,7 @@ class TestCase extends Orchestra
         }
 
         // テスト用のファイル作成(app.php)
-        if (strtok(app()->version(), ".") >= 12) {
+        if (strtok(app()->version(), '.') >= 12) {
             if (! is_file(__DIR__.'/../vendor/orchestra/testbench-core/laravel/config/app.php')) {
                 copy(__DIR__.'/laravel12/app.php', __DIR__.'/../vendor/orchestra/testbench-core/laravel/config/app.php');
             }
@@ -29,7 +29,6 @@ class TestCase extends Orchestra
                 copy(__DIR__.'/laravel11/app.php', __DIR__.'/../vendor/orchestra/testbench-core/laravel/config/app.php');
             }
         }
-
 
         // テスト用のファイルが残ってたら消す(web.php)
         if (is_file(__DIR__.'/../vendor/orchestra/testbench-core/laravel/routes/web.php')) {
