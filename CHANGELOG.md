@@ -2,6 +2,17 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v2.2.0 - 2025-02-23
+
+### What's Changed
+
+#### Laravel 12に対応🎉
+
+* new env and config change support by @askdkc in https://github.com/askdkc/breezejp/pull/139
+* Add Laravel 12 Support by @askdkc in https://github.com/askdkc/breezejp/pull/136
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v2.1.0...v2.2.0
+
 ## v2.1.0 - 2025-02-21
 
 ### What's Changed
@@ -136,6 +147,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
