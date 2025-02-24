@@ -2,6 +2,16 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v2.2.1 - 2025-02-24
+
+### What's Changed
+
+#### Laravel 12からの新しいスターターキット(Livewire版)に対応しました
+
+* Add Laravel 12 new livewire starter-kit support by @askdkc in https://github.com/askdkc/breezejp/pull/141
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v2.2.0...v2.2.1
+
 ## v2.2.0 - 2025-02-23
 
 ### What's Changed
@@ -147,6 +157,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
