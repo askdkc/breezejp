@@ -7,6 +7,7 @@
 [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/askdkc)
 
 ### 2025/2/23： Laravel 12に対応しました🎉
+[新しいスターターキット(Livewire版)もサポート](#laravel-12の新しいスターターキットlivewireのサポート)
 
 ## これは何？ TL;DR
 Laravelを下記2コマンドだけで自動で日本語化できちゃうパッケージです👍
@@ -181,6 +182,12 @@ php artsan serve
 <br>
 <img width="1066" alt="pagination" src="https://github.com/askdkc/breezejp/assets/7894265/7c86fb75-fcb2-4091-81e9-e5ac60fbfff9">
 <br>
+
+### Laravel 12の新しいスターターキット(Livewire)のサポート
+
+<img width="983" alt="image" src="https://github.com/user-attachments/assets/bd850c53-3e86-4b97-b0ef-f694da555500" />
+
+大部分は日本語化されますが、スターターキットのテンプレート側が一部多言語対応されていないので、その辺は今のところ手作業になります🥲
 
 ## パッケージの更新
 Laravelで新規のバリデーションルールが追加された際に、情報が追えていれば、このパッケージも更新します
