@@ -2,6 +2,18 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v2.2.2 - 2025-02-25
+
+### What's Changed
+
+#### Laravel 12のLivewire版スターターキットに追加された翻訳可能箇所に対応しました
+
+* Update laravel 11 app.php test template by @askdkc in https://github.com/askdkc/breezejp/pull/145
+* Update Test by @askdkc in https://github.com/askdkc/breezejp/pull/146
+* Add more translations for new starter kit by @askdkc in https://github.com/askdkc/breezejp/pull/143
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v2.2.1...v2.2.2
+
 ## v2.2.1 - 2025-02-24
 
 ### What's Changed
@@ -157,6 +169,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
