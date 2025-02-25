@@ -145,5 +145,18 @@
     "per page": "毎ページ",
     "results": "件",
     "to": "から",
-    "Showing": "表示中："
+    "Showing": "表示中：",
+    "Settings": "設定",
+    "Repository": "リポジトリ",
+    "Documentation": "ドキュメント",
+    "Manage your profile and account settings": "プロフィールとアカウント設定を管理",
+    "Update your name and email address": "名前とメールアドレスを更新",
+    "Update password": "パスワードを更新",
+    "Appearance": "スタイル",
+    "Update appearance settings for your account": "アカウントのスタイル設定を更新",
+    "Light": "ライト",
+    "Dark": "ダーク",
+    "System": "システム設定",
+    "Ensure your account is using a long, random password to stay secure": "十分に長くランダムなパスワードを使用して、アカウントのセキュリティを高めましょう",
+    "Delete your account and all of its resources": "アカウントを削除して全てのデータを消去"
 }
