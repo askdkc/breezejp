@@ -19,15 +19,9 @@ class TestCase extends Orchestra
             unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/config/app.php');
         }
 
-        // テスト用のファイル作成(app.php)
-        if (strtok(app()->version(), '.') >= 12) {
-            if (! is_file(__DIR__.'/../vendor/orchestra/testbench-core/laravel/config/app.php')) {
-                copy(__DIR__.'/laravel12/app.php', __DIR__.'/../vendor/orchestra/testbench-core/laravel/config/app.php');
-            }
-        } else {
-            if (! is_file(__DIR__.'/../vendor/orchestra/testbench-core/laravel/config/app.php')) {
-                copy(__DIR__.'/laravel11/app.php', __DIR__.'/../vendor/orchestra/testbench-core/laravel/config/app.php');
-            }
+        // テスト用のファイル作成(app.php) for Laravel 11 breaking change
+        if (! is_file(__DIR__.'/../vendor/orchestra/testbench-core/laravel/config/app.php')) {
+            copy(__DIR__.'/laravel11/app.php', __DIR__.'/../vendor/orchestra/testbench-core/laravel/config/app.php');
         }
 
         // テスト用のファイルが残ってたら消す(web.php)
@@ -68,10 +62,6 @@ class TestCase extends Orchestra
             unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/app/Http/Middleware/Localization.php');
         }
 
-        // config/app.phpのlocaleをenに戻す
-        $configfile = file_get_contents(__DIR__.'/../vendor/orchestra/testbench-core/laravel/config/app.php');
-        $configfile = str_replace("'locale' => 'ja'", "'locale' => 'en'", $configfile);
-        file_put_contents(__DIR__.'/../vendor/orchestra/testbench-core/laravel/config/app.php', $configfile);
     }
 
     protected function tearDown(): void
