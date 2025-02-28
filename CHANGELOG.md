@@ -2,6 +2,15 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v2.2.3 - 2025-02-28
+
+### What's Changed
+
+* Refactoring test by @askdkc in https://github.com/askdkc/breezejp/pull/149
+* Add more translation by @askdkc in https://github.com/askdkc/breezejp/pull/148
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v2.2.2...v2.2.3
+
 ## v2.2.2 - 2025-02-25
 
 ### What's Changed
@@ -169,6 +178,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
