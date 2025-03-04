@@ -1,4 +1,4 @@
-# Laravel Breeze 日本語化パッケージ：Breezejp
+# Laravel Starter Kit 日本語化パッケージ：Breezejp
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/askdkc/breezejp.svg)](https://packagist.org/packages/askdkc/breezejp)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/askdkc/breezejp/run-tests.yml?branch=main&label=tests)](https://github.com/askdkc/breezejp/actions?query=workflow%3Arun-tests+branch%3Amain)
@@ -10,7 +10,7 @@
 [新しいスターターキット(Livewire版)もサポート](#laravel-12の新しいスターターキットlivewireのサポート)
 
 ## これは何？ TL;DR
-Laravelを下記2コマンドだけで自動で日本語化できちゃうパッケージです👍
+Laravelの各種スターターキット（Livewire, Breeze, Jetstream, UI）を下記2コマンドだけで自動で日本語化できちゃうパッケージです👍
 ```bash
 composer require askdkc/breezejp --dev
 
@@ -69,9 +69,9 @@ php artisan breezejp --langswitch
 - [パッケージ作りに興味がある人は](#パッケージ作りに興味がある人は)
 
 ## はじめに
-このパッケージはLaravel Breezeを日本語化するパッケージとして誕生しましたが、現在ではBreeze、Jetstream、Laravel UIに対応しています😁 また、Laravelが持つ各種バリデーションメッセージを日本語化するので、Breeze等をインストールしていない環境でも実は便利に使えます😏<br>
+このパッケージはLaravel Breezeを日本語化するパッケージとして誕生しましたが、現在ではLaravel 12のスターターキット(Livewire版)、Breeze、Jetstream、Laravel UIに対応しています😁 また、Laravelが持つ各種バリデーションメッセージを日本語化するので、Breeze等をインストールしていない環境でも実は便利に使えます😏<br>
 <br>
-基本的な機能を確認するにはLaravel Breezeをインストールした後にこのパッケージをインストールしてください（以降の使い方の解説がその前提で書かれているため）<br><br>
+基本的な機能を確認するにはLaravelのスターターキットのいずれかをインストールした後にこのパッケージをインストールしてください（以降の使い方の解説がその前提で書かれているため）<br><br>
 動作としてはLaravelの`lang`ディレクトリ配下に日本語化に必要な翻訳ファイルを出力し、config内の言語設定も自動で日本語に変えています🇯🇵<br>
 
 
@@ -147,6 +147,18 @@ Breezejpは`php artisan breezejp`コマンド実行時にLaravelの設定ファ�
 'APP_LOCALE=ja'
 
 'APP_FAKER_LOCALE=ja_JP'
+```
+
+---`config/app.php`:インストール前---
+```vim
+'timezone' => 'UTC',
+```
+
+↓ `php artisan breezejp` の実行後
+
+---`config/app.php`:インストール後---
+```vim
+'timezone' => 'Asia/Tokyo',
 ```
 
 ### 動作確認
