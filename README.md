@@ -197,9 +197,9 @@ php artsan serve
 
 ### Laravel 12の新しいスターターキット(Livewire)のサポート
 
-<img width="983" alt="image" src="https://github.com/user-attachments/assets/bd850c53-3e86-4b97-b0ef-f694da555500" />
+Laravel 12からの新しいLivewire版スターターキットに自分が送った多言語対応への追加修正PR([#24](https://github.com/laravel/livewire-starter-kit/pull/24)と[#39](https://github.com/laravel/livewire-starter-kit/pull/39))がマージされたので、全体的に日本語化対応が進みました🎉
 
-大部分は日本語化されますが、スターターキットのテンプレート側が一部多言語対応されていないので、その辺は今のところ手作業になります🥲
+<img width="713" alt="image" src="https://github.com/user-attachments/assets/fd3e584c-8a21-44a3-b9f7-f8a14a5822cb" />
 
 ## パッケージの更新
 Laravelで新規のバリデーションルールが追加された際に、情報が追えていれば、このパッケージも更新します
