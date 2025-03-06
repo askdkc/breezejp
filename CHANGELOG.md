@@ -2,6 +2,14 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v2.2.4 - 2025-03-06
+
+### What's Changed
+
+* Add "Full name" place holder by @askdkc in https://github.com/askdkc/breezejp/pull/151
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v2.2.3...v2.2.4
+
 ## v2.2.3 - 2025-02-28
 
 ### What's Changed
@@ -178,6 +186,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
