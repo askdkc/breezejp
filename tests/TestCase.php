@@ -24,6 +24,16 @@ class TestCase extends Orchestra
             copy(__DIR__.'/laravel11/app.php', __DIR__.'/../vendor/orchestra/testbench-core/laravel/config/app.php');
         }
 
+        // テスト用のファイルが残ってたら消す(bootstrap/app.php)
+        if (is_file(__DIR__.'/../vendor/orchestra/testbench-core/laravel/bootstrap/app.php')) {
+            unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/bootstrap/app.php');
+        }
+
+        // テスト用のファイル作成(bootstrap/app.php)
+        if (! is_file(__DIR__.'/../vendor/orchestra/testbench-core/laravel/bootstrap/app.php')) {
+            copy(__DIR__.'/stub/app.php.stub', __DIR__.'/../vendor/orchestra/testbench-core/laravel/bootstrap/app.php');
+        }
+
         // テスト用のファイルが残ってたら消す(web.php)
         if (is_file(__DIR__.'/../vendor/orchestra/testbench-core/laravel/routes/web.php')) {
             unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/routes/web.php');
@@ -31,17 +41,12 @@ class TestCase extends Orchestra
 
         // テスト用のファイル作成(web.php)
         if (! is_file(__DIR__.'/../vendor/orchestra/testbench-core/laravel/routes/web.php')) {
-            copy(__DIR__.'/web.php.stub', __DIR__.'/../vendor/orchestra/testbench-core/laravel/routes/web.php');
+            copy(__DIR__.'/stub/web.php.stub', __DIR__.'/../vendor/orchestra/testbench-core/laravel/routes/web.php');
         }
 
         // テスト用のファイルが残ってたら消す(Kernel.php)
         if (is_file(__DIR__.'/../vendor/orchestra/testbench-core/laravel/app/Http/Kernel.php')) {
             unlink(__DIR__.'/../vendor/orchestra/testbench-core/laravel/app/Http/Kernel.php');
-        }
-
-        // テスト用のファイル作成(Kernel.php)
-        if (! is_file(__DIR__.'/../vendor/orchestra/testbench-core/laravel/app/Http/Kernel.php')) {
-            copy(__DIR__.'/Kernel.php.stub', __DIR__.'/../vendor/orchestra/testbench-core/laravel/app/Http/Kernel.php');
         }
 
         Factory::guessFactoryNamesUsing(
