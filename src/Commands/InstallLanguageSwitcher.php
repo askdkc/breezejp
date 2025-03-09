@@ -30,28 +30,39 @@ trait InstallLanguageSwitcher
             $this->info('言語切替用の Middleware は既に登録済みです');
         } else {
             $this->info('言語切替用の Middleware を準備します');
+            (new Filesystem)->ensureDirectoryExists(base_path('app/Http/Middleware'));
             copy(__DIR__.'/../../stubs/app/Http/Middleware/Localization.php', base_path('app/Http/Middleware/Localization.php'));
             (new Filesystem)->copyDirectory(__DIR__.'/../../stubs/lang/', lang_path());
         }
 
-        $this->info('Kernel に Middleware を登録します');
+        $this->info('bootstrap/app.php に Middleware を登録します');
         // Read the contents of the file into a string
-        $file = base_path('app/Http/Kernel.php');
+        $file = base_path('bootstrap/app.php');
         $contents = file_get_contents($file);
 
         // 実行済みなら実行しない
         if (strpos($contents, '\App\Http\Middleware\Localization::class,') !== false) {
-            $this->info('言語切替用の Middleware は Kernel に既に登録済みです');
+            $this->info('言語切替用の Middleware は Bootstrap に既に登録済みです');
 
             return self::SUCCESS;
         }
-        // Kernel内の既存の \App\Http\Middleware\VerifyCsrfToken::class の位置を取得
-        $position = strpos($contents, '\App\Http\Middleware\VerifyCsrfToken::class,');
-        if ($position !== false) {
-            $appendText = file_get_contents(__DIR__.'/../../stubs/app/Http/Kernel.stub');
 
-            $contents = substr_replace($contents, $appendText, $position, 0);
-            file_put_contents($file, $contents);
+        $position = strpos($contents, '//');
+        if ($position !== false) {
+            // bootstrap/app.php に Middleware を登録
+            $replacement = implode("\n", [
+                str_repeat(" ", 4) . '// Append by Breezejp',
+                str_repeat(" ", 8) . '$middleware->web(append:[',
+                str_repeat(" ", 12) . "App\Http\Middleware\Localization::class,",
+                str_repeat(" ", 8) . "]);"
+              ]);
+
+            $updatedCode = preg_replace(
+                '/->withMiddleware\(function\s*\(Middleware\s+\$middleware\)\s*{\s*\/\/\s*}/',
+                "->withMiddleware(function (Middleware \$middleware) {\n    $replacement\n    }",
+                $contents
+            );
+            file_put_contents($file, $updatedCode);
 
             $this->info('Language Switherのインストールが完了しました!');
 
