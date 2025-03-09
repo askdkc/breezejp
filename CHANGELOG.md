@@ -2,6 +2,16 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v2.3.0 - 2025-03-09
+
+### What's Changed
+
+#### 言語切り替え機能がLaravel 11 & 12でうまく動かない問題を修正しました
+
+* Fix langswitch for Laravel 11 and 12 by @askdkc in https://github.com/askdkc/breezejp/pull/153
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v2.2.4...v2.3.0
+
 ## v2.2.4 - 2025-03-06
 
 ### What's Changed
@@ -186,6 +196,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
