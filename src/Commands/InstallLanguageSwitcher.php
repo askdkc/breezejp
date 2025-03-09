@@ -51,11 +51,11 @@ trait InstallLanguageSwitcher
         if ($position !== false) {
             // bootstrap/app.php に Middleware を登録
             $replacement = implode("\n", [
-                str_repeat(" ", 4) . '// Append by Breezejp',
-                str_repeat(" ", 8) . '$middleware->web(append:[',
-                str_repeat(" ", 12) . "App\Http\Middleware\Localization::class,",
-                str_repeat(" ", 8) . "]);"
-              ]);
+                str_repeat(' ', 4).'// Append by Breezejp',
+                str_repeat(' ', 8).'$middleware->web(append:[',
+                str_repeat(' ', 12)."App\Http\Middleware\Localization::class,",
+                str_repeat(' ', 8).']);',
+            ]);
 
             $updatedCode = preg_replace(
                 '/->withMiddleware\(function\s*\(Middleware\s+\$middleware\)\s*{\s*\/\/\s*}/',
