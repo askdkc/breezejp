@@ -2,6 +2,17 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v2.3.1 - 2025-04-10
+
+### What's Changed
+
+* Add any_of error message by @nshiro in https://github.com/askdkc/breezejp/pull/155
+  新しく追加されたバリデーション：
+  `'any_of' => 'The :attribute field is invalid.',`
+  の翻訳が追加されました
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v2.3.0...v2.3.1
+
 ## v2.3.0 - 2025-03-09
 
 ### What's Changed
@@ -196,6 +207,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
