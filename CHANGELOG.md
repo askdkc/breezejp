@@ -2,6 +2,17 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v2.3.2 - 2025-05-28
+
+### What's Changed
+
+#### `in_array_keys`のバリデーション時の翻訳メッセージが追加されました
+
+* Bump dependabot/fetch-metadata from 2.3.0 to 2.4.0 by @dependabot in https://github.com/askdkc/breezejp/pull/157
+* Add in_array_keys message by @nshiro in https://github.com/askdkc/breezejp/pull/158 💕
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v2.3.1...v2.3.2
+
 ## v2.3.1 - 2025-04-10
 
 ### What's Changed
@@ -207,6 +218,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
