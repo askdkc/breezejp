@@ -1,8 +1,8 @@
 # Laravel Starter Kit 日本語化パッケージ：Breezejp
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/askdkc/breezejp.svg)](https://packagist.org/packages/askdkc/breezejp)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/askdkc/breezejp/run-tests.yml?branch=main&label=tests)](https://github.com/askdkc/breezejp/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/askdkc/breezejp/fix-php-code-style-issues.yml?branch=main&label=code%20style)](https://github.com/askdkc/breezejp/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![GitHub Tests Action Status](https://github.com/askdkc/breezejp/actions/workflows/run-tests.yml/badge.svg)](https://github.com/askdkc/breezejp/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://github.com/askdkc/breezejp/actions/workflows/fix-php-code-style-issues.yml/badge.svg)](https://github.com/askdkc/breezejp/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/askdkc/breezejp.svg)](https://packagist.org/packages/askdkc/breezejp)
 [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/askdkc)
 
