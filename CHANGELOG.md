@@ -2,6 +2,20 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v2.3.3 - 2025-08-18
+
+### What's Changed
+
+#### Laravelに新たに追加された`doesnt_contain`のバリデーション時の翻訳が追加されました！
+
+* Bump stefanzweifel/git-auto-commit-action from 5 to 6 by @dependabot[bot] in https://github.com/askdkc/breezejp/pull/160
+* Bump aglipanci/laravel-pint-action from 2.5 to 2.6 by @dependabot[bot] in https://github.com/askdkc/breezejp/pull/161
+* Fix CI badge icons by @askdkc in https://github.com/askdkc/breezejp/pull/162
+* Bump actions/checkout from 4 to 5 by @dependabot[bot] in https://github.com/askdkc/breezejp/pull/163
+* Add doesnt_contain error message by @nshiro in https://github.com/askdkc/breezejp/pull/164
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v2.3.2...v2.3.3
+
 ## v2.3.2 - 2025-05-28
 
 ### What's Changed
@@ -218,6 +232,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
