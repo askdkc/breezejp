@@ -39,6 +39,7 @@ return [
     'digits_between' => ':attributeは:min桁から:max桁の間で指定してください。',
     'dimensions' => ':attributeの図形サイズが正しくありません。',
     'distinct' => ':attributeには異なった値を指定してください。',
+    'doesnt_contain' => ':attributeには、:valuesのいずれかの値を含めないでください。',
     'doesnt_end_with' => ':attributeは、:values以外の値で終わるように指定してください。',
     'doesnt_start_with' => ':attributeは、:values以外の値で始まるように指定してください。',
     'email' => ':attributeには、有効なメールアドレスを指定してください。',
