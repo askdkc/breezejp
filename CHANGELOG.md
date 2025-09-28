@@ -2,6 +2,20 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v2.3.4 - 2025-09-28
+
+### What's Changed
+
+* `prohibits` バリデーションメッセージの :attributeプレースホルダ修正 by @takashi145 in https://github.com/askdkc/breezejp/pull/166
+
+@takashi145 さん、ありがとうございます💕👍
+
+### New Contributors
+
+* @takashi145 made their first contribution in https://github.com/askdkc/breezejp/pull/166
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v2.3.3...v2.3.4
+
 ## v2.3.3 - 2025-08-18
 
 ### What's Changed
@@ -232,6 +246,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
