@@ -6,8 +6,10 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/askdkc/breezejp.svg)](https://packagist.org/packages/askdkc/breezejp)
 [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/askdkc)
 
-### 2025/2/23： Laravel 12に対応しました🎉
+### 2025/10/24： 2FA機能の翻訳に対応しました🎉
 [新しいスターターキット(Livewire版)もサポート](#laravel-12の新しいスターターキットlivewireのサポート)
+
+- [Livewireスターターキットに新規に追加された2FA機能の翻訳にも対応しました](https://x.com/taylorotwell/status/1981353339959804245)
 
 ## これは何？ TL;DR
 Laravelの各種スターターキット（Livewire, Breeze, Jetstream, UI）を下記2コマンドだけで自動で日本語化できちゃうパッケージです👍
