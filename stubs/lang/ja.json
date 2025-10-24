@@ -50,7 +50,7 @@
     "Email password reset link": "パスワードリセットメールを送信",
     "Send Password Reset Link": "パスワードリセットメールを送信",
     "Send password reset link": "パスワードリセットメールを送信",
-    "This is a secure area of the application. Please confirm your password before continuing.": "認証が必要なページです。パスワードを入力して確認ボタンをクリックしてください",
+    "This is a secure area of the application. Please confirm your password before continuing.": "認証確認が必要なページのため、パスワードを入力して確認ボタンをクリックしてください",
     "Confirm": "確認",
     "Dashboard": "管理画面",
     "Manage Team": "チーム管理",
