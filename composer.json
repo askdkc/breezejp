@@ -1,6 +1,6 @@
 {
     "name": "askdkc/breezejp",
-    "description": "Laravel Starter Kit (Livewire+Breeze+Laravel UI+Jetstream)や標準のバリデーションメッセージを全て一瞬で日本語化し、言語切替機能も提供するパッケージです / This package provides all-in-one Japanese translation for Laravel StarterKit (Livewire StarterKit, Breeze, Laravel UI and Jetstream) package with language switching feature. It also privides Japanese validation messages",
+    "description": "Laravel Starter Kit (Livewire+Breeze+Laravel UI+Jetstream)や標準のバリデーションメッセージを全て一瞬で日本語化し、言語切替機能も提供するパッケージです / This package provides all-in-one Japanese translation for Laravel StarterKit (Livewire StarterKit, Breeze, Laravel UI and Jetstream) packages and validation messages with language switching feature.",
     "keywords": [
         "breeze",
         "laravel",
