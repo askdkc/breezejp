@@ -2,6 +2,17 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v2.4.0 - 2025-10-24
+
+### What's Changed
+
+#### 新機能：2FA機能の翻訳に対応
+
+* Bump stefanzweifel/git-auto-commit-action from 6 to 7 by @dependabot[bot] in https://github.com/askdkc/breezejp/pull/168
+* 2FA認証の翻訳に対応 by @askdkc in https://github.com/askdkc/breezejp/pull/169
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v2.3.4...v2.4.0
+
 ## v2.3.4 - 2025-09-28
 
 ### What's Changed
@@ -246,6 +257,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
