@@ -2,6 +2,14 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v2.4.1 - 2025-10-24
+
+### 翻訳を微修正
+
+追加認証が必要なページの説明の表現を若干修正しました。
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v2.4.0...v2.4.1
+
 ## v2.4.0 - 2025-10-24
 
 ### What's Changed
@@ -257,6 +265,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
