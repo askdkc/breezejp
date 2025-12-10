@@ -2,6 +2,19 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v2.4.2 - 2025-12-10
+
+### What's Changed
+
+#### 新たに追加された`encoding`のバリデーションメッセージの翻訳に対応しました
+
+@nshiro さん、ありがとうございます💕
+
+* Bump actions/checkout from 5 to 6 by @dependabot[bot] in https://github.com/askdkc/breezejp/pull/172
+* Add encoding error message by @nshiro in https://github.com/askdkc/breezejp/pull/173
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v2.4.1...v2.4.2
+
 ## v2.4.1 - 2025-10-24
 
 ### 翻訳を微修正
@@ -265,6 +278,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
