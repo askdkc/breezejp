@@ -8,64 +8,44 @@ on:
 
 jobs:
   test:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      fail-fast: true
-      matrix:
-        os: [ubuntu-latest]
-        php: [8.1, 8.2, 8.3, 8.4, 8.5]
-        laravel: [11.*, 12.*, 13.*]
-        stability: [prefer-stable]
-        include:
-          - laravel: 11.*
-            testbench: 9.*
-          - laravel: 12.*
-            testbench: 10.*
-          - laravel: 13.*
-            testbench: 11.*
-        exclude:
-          - laravel: 11.*
-            php: 8.1
-          - laravel: 12.*
-            php: 8.1
-          - laravel: 13.*
-            php: 8.1
-          - laravel: 13.*
-            php: 8.2
+    runs-on: ubuntu-latest
 
-    name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.stability }} - ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        php: [8.5, 8.4, 8.3, 8.2, 8.1]
+        laravel: [^11.0, ^12.0, ^13.0]
+        dependency-version: [prefer-lowest, prefer-stable]
+        exclude:
+          - laravel: ^13.0
+            php: 8.2
+          - laravel: ^13.0
+            php: 8.1
+          - laravel: ^12.0
+            php: 8.1
+          - laravel: ^11.0
+            php: 8.1
+
+    name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.dependency-version }}
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php }}
-          extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite, bcmath, soap, intl, gd, exif, iconv, imagick, fileinfo
+          extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite, mysql, mysqli, pdo_mysql, bcmath, soap, intl, gd, exif, iconv, imagick, fileinfo
           coverage: none
-
-      - name: Set Minimum PHP 8.2 Versions
-        uses: nick-fields/retry@v3
-        with:
-          timeout_minutes: 5
-          max_attempts: 5
-          command: composer require guzzlehttp/psr7:~2.4 --no-interaction --no-update
-        if: matrix.php >= 8.2
-
-      - name: Setup problem matchers
-        run: |
-          echo "::add-matcher::${{ runner.tool_cache }}/php.json"
-          echo "::add-matcher::${{ runner.tool_cache }}/phpunit.json"
 
       - name: Install dependencies
         run: |
-          composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
-          composer update --${{ matrix.stability }} --prefer-dist --no-interaction
+          composer require "laravel/framework:${{ matrix.laravel }}" "nesbot/carbon:>=2.72" --dev --no-interaction --no-update
+          composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction
 
-      - name: List Installed Dependencies
-        run: composer show -D
+      - name: Execute tests
+        run: vendor/bin/pest
 
       - name: Execute tests
         run: vendor/bin/pest --ci
