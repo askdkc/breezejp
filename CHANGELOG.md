@@ -2,6 +2,18 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v2.5.0 - 2026-03-18
+
+### What's Changed
+
+#### Laravel 13に対応しました🎉
+
+* Bump dependabot/fetch-metadata from 2.4.0 to 2.5.0 by @dependabot[bot] in https://github.com/askdkc/breezejp/pull/175
+* Bump ramsey/composer-install from 3 to 4 by @dependabot[bot] in https://github.com/askdkc/breezejp/pull/176
+* Update for Laravel 13 by @askdkc in https://github.com/askdkc/breezejp/pull/177
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v2.4.2...v2.5.0
+
 ## v2.4.2 - 2025-12-10
 
 ### What's Changed
@@ -278,6 +290,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
