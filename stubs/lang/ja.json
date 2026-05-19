@@ -211,5 +211,12 @@
     "No passkeys yet.": "パスキーはまだありません",
     "No passkeys yet": "パスキーはまだありません",
     "Add a passkey to sign in without a password": "パスワードなしでサインインするためのパスキーを追加",
-    "Passkeys are not supported in this browser.": "このブラウザはパスキーに対応していません"
+    "Passkeys are not supported in this browser.": "このブラウザはパスキーに対応していません",
+    "Passkey name": "パスキー名",
+    "e.g., MacBook Pro, iPhone": "例：MacBook Pro、iPhone",
+    "Give this passkey a name to help you identify it later.": "後で識別できるように、このパスキーに名前を付けてください",
+    "Register passkey": "パスキーを登録",
+    "Confirm with passkey": "パスキーで確認",
+    "Confirming...": "確認中...",
+    "Or confirm with password": "またはパスワードで確認"
 }
