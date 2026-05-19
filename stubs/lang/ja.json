@@ -221,5 +221,7 @@
     "Confirming...": "確認中...",
     "Or confirm with password": "またはパスワードで確認",
     "Added :time": "追加日時: :time",
-    "Last used :time": "最終使用日時: :time"
+    "Last used :time": "最終使用日時: :time",
+    "Remove passkey": "パスキーを削除",
+    "Are you sure you want to remove the passkey \":name\"? You will no longer be able to use it to sign in.": "パスキー「:name」を削除してもよろしいですか？このパスキーを使用してサインインできなくなります"
 }
