@@ -2,6 +2,19 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v2.5.1 - 2026-05-19
+
+### What's Changed
+
+#### パスキー機能の翻訳を追加しました🎉
+
+* Bump dependabot/fetch-metadata from 2.5.0 to 3.0.0 by @dependabot[bot] in https://github.com/askdkc/breezejp/pull/179
+* Bump dependabot/fetch-metadata from 3.0.0 to 3.1.0 by @dependabot[bot] in https://github.com/askdkc/breezejp/pull/180
+* Add Japanese translations for 2FA and passkeys by @askdkc in https://github.com/askdkc/breezejp/pull/181
+* Add Japanese translations for passkey features by @askdkc in https://github.com/askdkc/breezejp/pull/182
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v2.5.0...v2.5.1
+
 ## v2.5.0 - 2026-03-18
 
 ### What's Changed
@@ -290,6 +303,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
