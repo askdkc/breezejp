@@ -198,5 +198,18 @@
     "Hide Recovery Codes": "リカバリーコードを非表示",
     "Regenerate Codes": "リカバリーコードを再生成",
     "Each recovery code can be used once to access your account and will be removed after use. If you need more, click Regenerate Codes above.": "各リカバリーコードは一度だけ使用でき、使用後に削除されます。さらに必要な場合には、上記の「リカバリーコードを再生成」ボタンをクリックしてください",
-    "Disable 2FA": "2段階認証を無効化"
+    "Disable 2FA": "2段階認証を無効化",
+    "You will be prompted for a secure, random pin during login, which you can retrieve from the TOTP-supported application on your phone.": "ログイン時に認証用のランダムなPINコードが必要になります。このPINコードは、スマートフォンのTOTP対応アプリから取得できます。",
+    "Security": "セキュリティ",
+    "Two-factor authentication": "2段階認証",
+    "View recovery codes": "リカバリーコードを表示",
+    "2FA recovery codes": "2段階認証リカバリーコード",
+    "Regenerate codes": "リカバリーコードを再生成",
+    "Each recovery code can be used once to access your account and will be removed after use. If you need more, click Regenerate codes above.": "各リカバリーコードは一度だけ使用でき、使用後に削除されます。さらに必要な場合には、上記の「リカバリーコードを再生成」ボタンをクリックしてください",
+    "Passkeys": "パスキー",
+    "Manage your passkeys for passwordless sign-in": "パスキーを管理して、パスワードなしでサインイン",
+    "No passkeys yet.": "パスキーはまだありません",
+    "No passkeys yet": "パスキーはまだありません",
+    "Add a passkey to sign in without a password": "パスワードなしでサインインするためのパスキーを追加",
+    "Passkeys are not supported in this browser.": "このブラウザはパスキーに対応していません"
 }
