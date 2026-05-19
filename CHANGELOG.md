@@ -2,6 +2,14 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v2.5.2 - 2026-05-19
+
+### What's Changed
+
+* Add passkey removal confirmation messages in Japanese by @askdkc in https://github.com/askdkc/breezejp/pull/184
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v2.5.1...v2.5.2
+
 ## v2.5.1 - 2026-05-19
 
 ### What's Changed
@@ -303,6 +311,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
