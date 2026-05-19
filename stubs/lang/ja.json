@@ -207,6 +207,7 @@
     "Regenerate codes": "リカバリーコードを再生成",
     "Each recovery code can be used once to access your account and will be removed after use. If you need more, click Regenerate codes above.": "各リカバリーコードは一度だけ使用でき、使用後に削除されます。さらに必要な場合には、上記の「リカバリーコードを再生成」ボタンをクリックしてください",
     "Passkeys": "パスキー",
+    "Add passkey": "パスキーを追加",
     "Manage your passkeys for passwordless sign-in": "パスキーを管理して、パスワードなしでサインイン",
     "No passkeys yet.": "パスキーはまだありません",
     "No passkeys yet": "パスキーはまだありません",
@@ -218,5 +219,7 @@
     "Register passkey": "パスキーを登録",
     "Confirm with passkey": "パスキーで確認",
     "Confirming...": "確認中...",
-    "Or confirm with password": "またはパスワードで確認"
+    "Or confirm with password": "またはパスワードで確認",
+    "Added :time": "追加日時: :time",
+    "Last used :time": "最終使用日時: :time"
 }
