@@ -2,6 +2,21 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v2.6.0 - 2026-07-12
+
+### What's Changed
+
+#### Svelte Starter Kit の翻訳に対応しました
+
+* Bump actions/checkout from 6 to 7 by @dependabot[bot] in https://github.com/askdkc/breezejp/pull/186
+* Add Translations for Teams and Svelte Frontend Support by @askdkc in https://github.com/askdkc/breezejp/pull/187
+
+#### Team機能利用時の翻訳漏れを修正しました
+
+#### Language SwitcherのLaravel 13での不具合を修正しました
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v2.5.2...v2.6.0
+
 ## v2.5.2 - 2026-05-19
 
 ### What's Changed
@@ -311,6 +326,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
