@@ -48,6 +48,11 @@ php artisan breezejp --langswitch
 
 <img src="https://github.com/askdkc/breezejp/assets/7894265/d52738c5-c6ae-4f92-87ef-0046f8cff4f7" width="600">
 
+さらにSvelte版スターターキットは下記1コマンドでテンプレートごと日本語化（ランタイム翻訳化）できます👍 （[詳細](#svelteスターターキットのサポート--svelte-starter-kit-support)）
+```bash
+php artisan breezejp --svelte
+```
+
 便利だと思ったらサポートしてね
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X7X8O7KCU)
@@ -210,6 +215,25 @@ php artsan serve
 Laravel 12からの新しいLivewire版スターターキットに自分が送った多言語対応への追加修正PR([#24](https://github.com/laravel/livewire-starter-kit/pull/24)と[#39](https://github.com/laravel/livewire-starter-kit/pull/39))がマージされたので、全体的に日本語化対応が進みました🎉
 
 <img width="713" alt="image" src="https://github.com/user-attachments/assets/fd3e584c-8a21-44a3-b9f7-f8a14a5822cb" />
+
+### Svelteスターターキットのサポート / Svelte Starter Kit Support
+
+[Svelte版スターターキット](https://github.com/laravel/svelte-starter-kit)はLivewire版と違いUIの英語テキストがハードコードされていて`__()`による翻訳が効きません。そこで下記コマンドを実行すると、`t()`翻訳ヘルパー(`resources/js/lib/i18n.ts`)の設置・`lang/ja.json`のInertia props共有・各`.svelte`テンプレートの`t()`呼び出しへの書き換えまで自動で行い、ランタイム翻訳（Livewireの`__()`相当）を組み込みます👍
+
+```bash
+php artisan breezejp --svelte
+```
+> **メモ：Sailの場合**
+> ```bash
+> ./vendor/bin/sail artisan breezejp --svelte
+> ```
+
+通常の`php artisan breezejp`実行時もSvelteスターターキットを自動検出して日本語化を提案します
+
+`--langswitch`と組み合わせれば言語切替もSvelte UIでそのまま機能します（翻訳が見つからないキーは英語のまま表示されるので安全です）
+
+> **注意：**
+> このコマンドは`resources/js`以下の`.svelte`ファイルと`app/Http/Middleware/HandleInertiaRequests.php`を書き換えます。実行前にgitでコミットしておくことをお勧めします（再実行しても二重書き換えはされません）
 
 ## パッケージの更新
 Laravelで新規のバリデーションルールが追加された際に、情報が追えていれば、このパッケージも更新します

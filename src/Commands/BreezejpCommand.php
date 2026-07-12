@@ -8,8 +8,9 @@ use Illuminate\Filesystem\Filesystem;
 class BreezejpCommand extends Command
 {
     use InstallLanguageSwitcher;
+    use InstallSvelteI18n;
 
-    public $signature = 'breezejp {--langswitch : Install Language Switcher 言語切替機能のインストール}';
+    public $signature = 'breezejp {--langswitch : Install Language Switcher 言語切替機能のインストール} {--svelte : Translate Svelte templates Svelteテンプレートの日本語化(ランタイム翻訳化)}';
 
     public $description = 'Add Japanese Translation files for Laravel Breeze';
 
@@ -18,6 +19,14 @@ class BreezejpCommand extends Command
         // Install Language Switcher 言語切替機能をインストール
         if ($this->option('langswitch')) {
             return $this->installLanguageSwitcher();
+        }
+
+        // Svelteテンプレートの日本語化（ランタイム翻訳化）
+        if ($this->option('svelte')) {
+            (new Filesystem)->ensureDirectoryExists(lang_path());
+            (new Filesystem)->copyDirectory(__DIR__.'/../../stubs/lang/', lang_path());
+
+            return $this->installSvelteI18n();
         }
 
         $this->info('Laravel Breeze用に日本語翻訳ファイルを準備します');
@@ -39,6 +48,9 @@ class BreezejpCommand extends Command
 
             // Save the modified contents back to the file
             file_put_contents(base_path('config/app.php'), $configfile);
+
+            // Svelteスターターキットを検出したらテンプレートの日本語化を提案
+            $this->maybeOfferSvelteI18n();
 
             if ($this->confirm('GitHubリポジトリにスターの御協力をお願いします🙏', true)) {
                 $repoUrl = 'https://github.com/askdkc/breezejp';
@@ -82,6 +94,9 @@ class BreezejpCommand extends Command
             // Save the modified contents back to the file
             file_put_contents(base_path('config/app.php'), $configfile);
         }
+
+        // Svelteスターターキットを検出したらテンプレートの日本語化を提案
+        $this->maybeOfferSvelteI18n();
 
         if ($this->confirm('GitHubリポジトリにスターの御協力をお願いします🙏', true)) {
             $repoUrl = 'https://github.com/askdkc/breezejp';
