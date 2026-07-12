@@ -55,12 +55,15 @@
   "Dashboard": "管理画面",
   "Manage Team": "チーム管理",
   "Team Settings": "チーム設定",
+  "Team settings": "チーム設定",
+  "Update your team name and settings": "チーム名と設定を更新",
   "Create New Team": "新規チーム作成",
   "Switch Teams": "チーム切り替え",
   "Manage Account": "アカウント管理",
   "API Tokens": "APIトークン",
   "Team Details": "チーム詳細",
   "Create a new team to collaborate with others on projects.": "新規チームを作成して、他のメンバーとプロジェクトを共有できます",
+  "Create a new team to collaborate with others.": "新しいチームを作成して、他のメンバーとコラボレーションできます",
   "Team Owner": "チーム所有者",
   "Create Team": "チームを作成",
   "Delete Team": "チームを削除",
@@ -312,5 +315,16 @@
   "Are you sure you want to remove :name from this team?": "本当に「:name」をこのチームから除外してもよろしいですか？",
   "Remove member": "メンバーを除外",
   "Team name": "チーム名",
-  "Permanently delete your team": "チームを完全に削除"
+  "Permanently delete your team": "チームを完全に削除",
+  "Accept or decline the teams you have been invited to join.": "招待されたチームへの参加を承認または拒否できます",
+  "Decline": "拒否",
+  "Edit team": "チームを編集",
+  "Enter team name": "チーム名を入力",
+  "Forgot password?": "パスワードを忘れた？",
+  "Invitations that haven't been accepted yet": "まだ承認されていない招待",
+  "My team": "マイチーム",
+  "Type \":name\" to confirm": "「:name」と入力して確認",
+  "Manage your teams and team memberships": "チームとチームメンバーシップを管理"
 }
+
+
