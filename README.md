@@ -235,6 +235,41 @@ php artisan breezejp --svelte
 > **注意：**
 > このコマンドは`resources/js`以下の`.svelte`ファイルと`app/Http/Middleware/HandleInertiaRequests.php`を書き換えます。実行前にgitでコミットしておくことをお勧めします（再実行しても二重書き換えはされません）
 
+#### Svelte独自の翻訳を追加する
+
+Svelte側で追加の文言を翻訳する場合は、`lang/ja.json`に英語の文言をキーとして追加し、`t()`で呼び出します
+
+- `lang/ja.json`追加例
+``` json
+{
+    "Settings": "設定",
+    "Export data": "データをエクスポート"
+}
+```
+
+- `svelte`ファイル追加例
+```svelte
+<script lang="ts">
+    import { t } from '@/lib/i18n';
+</script>
+
+<button>{t('Export data')}</button>
+```
+- `:placeholder`形式の値も指定できます
+
+``` json
+{
+    "Hello, :name": "こんにちは、:nameさん"
+}
+```
+
+``` svelte
+<p>{t('Hello, :name', { name: user.name })}</p>
+```
+翻訳キーが見つからない場合は、キー自身がそのまま表示されます。翻訳追加後は、現在のlocaleに対応するJSONファイル（例：lang/ja.json）へ同じキーを追加してください
+
+補足として、`breezejp --svelteは既存の.svelteテンプレートを自動変換するコマンドなので、 **後から追加する独自画面では上記のt()`を直接使う** という区別も明確になります	
+
 ## パッケージの更新
 Laravelで新規のバリデーションルールが追加された際に、情報が追えていれば、このパッケージも更新します
 
