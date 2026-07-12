@@ -24,9 +24,9 @@
         "illuminate/contracts": "^11.0|^12.0|^13.0"
     },
     "require-dev": {
+        "larastan/larastan": "^3.0",
         "laravel/pint": "^1.4",
         "nunomaduro/collision": "^8.0",
-        "larastan/larastan": "^3.0",
         "orchestra/testbench": "^9.0|^10.0|^11.0",
         "pestphp/pest": "^3.8",
         "phpstan/extension-installer": "^1.4"

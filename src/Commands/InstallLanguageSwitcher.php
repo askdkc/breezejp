@@ -41,8 +41,22 @@ trait InstallLanguageSwitcher
         $contents = file_get_contents($file);
 
         // 実行済みなら実行しない
-        if (strpos($contents, '\App\Http\Middleware\Localization::class,') !== false) {
+        if (strpos($contents, 'Localization::class') !== false) {
             $this->info('言語切替用の Middleware は Bootstrap に既に登録済みです');
+
+            return self::SUCCESS;
+        }
+
+        // Laravel 12スターターキット系bootstrapは既に web(append: [...]) を持つので、その先頭に追加
+        if (strpos($contents, '$middleware->web(append: [') !== false) {
+            $contents = str_replace(
+                '$middleware->web(append: [',
+                '$middleware->web(append: ['."\n".str_repeat(' ', 12).'App\Http\Middleware\Localization::class,',
+                $contents
+            );
+            file_put_contents($file, $contents);
+
+            $this->info('Language Switherのインストールが完了しました!');
 
             return self::SUCCESS;
         }
@@ -60,13 +74,18 @@ trait InstallLanguageSwitcher
             $updatedCode = preg_replace(
                 '/->withMiddleware\(function\s*\(Middleware\s+\$middleware\)\s*{\s*\/\/\s*}/',
                 "->withMiddleware(function (Middleware \$middleware) {\n    $replacement\n    }",
-                $contents
+                $contents,
+                1,
+                $count
             );
-            file_put_contents($file, $updatedCode);
 
-            $this->info('Language Switherのインストールが完了しました!');
+            if ($count > 0) {
+                file_put_contents($file, $updatedCode);
 
-            return self::SUCCESS;
+                $this->info('Language Switherのインストールが完了しました!');
+
+                return self::SUCCESS;
+            }
         }
 
         $this->error('Language Switherのインストールが失敗しました!');
