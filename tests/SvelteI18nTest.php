@@ -21,6 +21,14 @@ beforeEach(function () {
 <script lang="ts">
     import { Form } from '@inertiajs/svelte';
 
+    interface Props {
+        status?: string;
+        action: 'Log in' | 'Register';
+        kind: 'Password';
+    }
+
+    let { status, action, kind }: Props = $props();
+
     let processing = false;
 </script>
 
@@ -96,7 +104,10 @@ test('breezejp --svelte publishes the helper and patches templates', function ()
         ->toContain("{t('Don\\'t have an account?')}")
         // <script module> constants stay untouched (translated at render sites)
         ->toContain("title: 'Log in to your account',")
-        ->toContain("description: 'Enter your email and password below to log in',");
+        ->toContain("description: 'Enter your email and password below to log in',")
+        // TS type annotations stay untouched (wrapping them breaks the build)
+        ->toContain("action: 'Log in' | 'Register';")
+        ->toContain("kind: 'Password';");
 
     $passkey = file_get_contents(base_path('resources/js/components/PasskeyItem.svelte'));
     expect($passkey)

@@ -297,7 +297,12 @@ PHP;
     protected function patchJsLiterals(string $contents, string $key): string
     {
         $js = $this->jsString($key);
-        $pattern = '/(?<!t\()'.preg_quote($js, '/').'/';
+        // Skip TS type positions: union members ("'A' | 'B'") and members ending
+        // with ";" (interface/type alias). Skipping a value literal is harmless
+        // (t() falls back to the English key); wrapping a type breaks the build.
+        // ponytail: heuristic, not a TS parser — single-literal inline object
+        // types ("{ x: 'A' }") are indistinguishable from object values.
+        $pattern = '/(?<!t\()(?<!\|)(?<!\| )'.preg_quote($js, '/').'(?!\s*[|;])/';
 
         return preg_replace_callback(
             $pattern,
