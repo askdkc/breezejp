@@ -6,6 +6,8 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/askdkc/breezejp.svg)](https://packagist.org/packages/askdkc/breezejp)
 [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/askdkc)
 
+### 2026/7/13： Svelte-Starter-Kitの翻訳に対応しました🎉
+
 ### 2026/5/19： PassKey(パスキー)機能の翻訳に対応しました🎉
 
 スターターキットにパスキー機能が追加されたので、各メニューの日本語訳を追加しました！
