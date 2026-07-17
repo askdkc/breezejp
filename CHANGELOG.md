@@ -2,6 +2,16 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v2.6.1 - 2026-07-17
+
+### What's Changed
+
+#### base64 エラー翻訳追加です
+
+* Add base64 error message by @nshiro in https://github.com/askdkc/breezejp/pull/189
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v2.6.0...v2.6.1
+
 ## v2.6.0 - 2026-07-12
 
 ### What's Changed
@@ -326,6 +336,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
