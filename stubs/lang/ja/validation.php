@@ -15,6 +15,7 @@ return [
     'any_of' => ':attributeには、正しい値を指定してください。',
     'array' => ':attributeは配列でなくてはなりません。',
     'ascii' => ':attributeは半角の英数字や記号のみで指定してください。',
+    'base64' => ':attributeには、有効なBase64文字列を指定してください。',
     'before' => ':attributeには、:dateより前の日付をご利用ください。',
     'before_or_equal' => ':attributeには、:date以前の日付をご利用ください。',
     'between' => [
