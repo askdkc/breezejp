@@ -2,6 +2,16 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v2.6.2 - 2026-08-01
+
+### What's Changed
+
+#### Laravel 13での言語切り替え機能の互換性修正
+
+* Implemented Laravel 13 --langswitch compatibility. by @askdkc in https://github.com/askdkc/breezejp/pull/191
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v2.6.1...v2.6.2
+
 ## v2.6.1 - 2026-07-17
 
 ### What's Changed
@@ -336,6 +346,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
