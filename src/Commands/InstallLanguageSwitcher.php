@@ -72,8 +72,8 @@ trait InstallLanguageSwitcher
             ]);
 
             $updatedCode = preg_replace(
-                '/->withMiddleware\(function\s*\(Middleware\s+\$middleware\)\s*{\s*\/\/\s*}/',
-                "->withMiddleware(function (Middleware \$middleware) {\n    $replacement\n    }",
+                '/->withMiddleware\(function\s*\(Middleware\s+\$middleware\)(?:\s*:\s*void)?\s*{\s*\/\/\s*}/',
+                "->withMiddleware(function (Middleware \$middleware): void {\n    $replacement\n    }",
                 $contents,
                 1,
                 $count
