@@ -2,6 +2,14 @@
 
 All notable changes to `breezejp` will be documented in this file.
 
+## v2.6.3 - 2026-08-07
+
+### What's Changed
+
+* Add array_keys error message by @nshiro in https://github.com/askdkc/breezejp/pull/193
+
+**Full Changelog**: https://github.com/askdkc/breezejp/compare/v2.6.2...v2.6.3
+
 ## v2.6.2 - 2026-08-01
 
 ### What's Changed
@@ -346,6 +354,7 @@ Thank You @nshiro san!!
 
 ```bash
 php artisan breezejp --langswitch
+
 
 
 
